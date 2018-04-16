@@ -8,4 +8,4 @@
 ## AI(ver1.1)
 1. 코드 설명 추가
 1. Build Path 수정
-1. 승률(percent) 수정 : 기본 승률 5로 조정, betting 방식을 방어전략을 바꿈
+1. 승률(percent) 수정 : 기본 승률 5로 조정, betting 방식을 방어전략으로 변경
