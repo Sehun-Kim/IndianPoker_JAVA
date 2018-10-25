@@ -4,7 +4,6 @@ import org.junit.Test;
 import vo.Chip;
 
 import java.util.List;
-
 import static org.junit.Assert.*;
 
 public class DealerTest {
@@ -15,4 +14,6 @@ public class DealerTest {
         List<Chip> chips = dealer.giveInitChips(numberOfChips);
         assertEquals(numberOfChips, chips.size());
     }
+
+
 }

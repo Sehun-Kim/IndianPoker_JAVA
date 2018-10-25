@@ -5,8 +5,11 @@ import vo.Chip;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Dealer {
+
+    private Map<Player, Deck> map;
 
     private Deck player1Deck;
     private Deck player2Deck;

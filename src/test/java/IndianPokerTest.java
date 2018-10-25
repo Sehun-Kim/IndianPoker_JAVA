@@ -29,8 +29,25 @@ public class IndianPokerTest {
 //
 //    }
 
+//    @Test
+//    public void 첫배팅생성익셉션() {
+//
+//    }
+
+//
+//    @Test
+//    public void 다음배팅생성() {
+//
+//    }
+
+
+//    @Test
+//    public void 플레이어첫배팅익셉션() {
+//
+//    }
+
     @Test
-    public void 배팅생성익셉션() {
+    public void 플레이어일반배팅익셉션() {
 
     }
 
@@ -77,15 +94,15 @@ public class IndianPokerTest {
     public void 턴이종료될때_이긴플레이어에게_칩배분() {
     }
 
-    @Test
-    public void 딜러가_승부를결정() {
+//    @Test
+//    public void 딜러가_승부를결정() {
+//
+//    }
 
-    }
-
-    @Test
-    public void 딜러가_카드한장배분할때() {
-
-    }
+//    @Test
+//    public void 딜러가_카드한장배분할때() {
+//
+//    }
 
     @Test
     public void 새로배팅했을때_전에배팅한_칩이_합산되는지() {

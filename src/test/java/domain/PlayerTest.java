@@ -3,6 +3,8 @@ package domain;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import vo.BettingCase;
+import vo.Card;
 import vo.Chip;
 
 import java.util.ArrayList;
@@ -39,5 +41,18 @@ public class PlayerTest {
         String name = "choising";
         Player p1 = new HumanPlayer(name, chips);
         Assert.assertEquals(name, p1.getName());
+    }
+
+    @Test
+    public void giveACard() {
+        Player p1 = new HumanPlayer("dom", chips);
+        assertTrue(p1.giveACard() instanceof Card);
+
+    }
+
+    @Test
+    public void firstBetting() {
+        Player p1 = new HumanPlayer("dom", chips);
+        assertTrue(p1.firstBetting(3, BettingCase.RAISE_CASE) instanceof Betting);
     }
 }
