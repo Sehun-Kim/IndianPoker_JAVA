@@ -1,32 +1,65 @@
 package domain;
 
-        import org.junit.Test;
-        import vo.BettingCase;
-        import vo.Chip;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
-        import java.util.Arrays;
-        import java.util.List;
+import dto.BettingDto;
+import org.junit.Test;
+import vo.BettingCase;
+import vo.Chips;
 
-        import static org.junit.Assert.*;
+import java.util.Arrays;
+import java.util.List;
 
 public class BettingTest {
 
     @Test
-    public void initFirstTest() {
-        List<Chip> chips = Arrays.asList(new Chip(), new Chip());
-        Betting betting = Betting.ofFirst(chips, BettingCase.DIE_CASE, "choising");
+    public void ofZero() {
+        assertTrue(Betting.ofZero(new Chips(1), "dom") instanceof Betting);
     }
 
-    @Test (expected = IllegalArgumentException.class)
-    public void initFirstErrorTest() {
-        List<Chip> chips = Arrays.asList(new Chip(), new Chip());
-        Betting betting = Betting.ofFirst(chips, BettingCase.CALL_CASE, "choising");
+    @Test(expected = IllegalArgumentException.class)
+    public void ofFirstWithException() {
+        BettingDto preBettingDto = Betting.ofZero(new Chips(1), "dom").toDto();
+        Betting.ofFirst(new Chips(5), BettingCase.CALL_CASE, preBettingDto);
     }
 
     @Test
-    public void initBetting() {
-        List<Chip> chips = Arrays.asList(new Chip(), new Chip());
-        Betting betting1 = Betting.ofFirst(chips, BettingCase.RAISE_CASE, "choising");
-        Betting betting = Betting.ofGeneral(betting1.toDto(), BettingCase.RAISE_CASE, chips);
+    public void ofFirstExpectRaise() {
+        BettingDto preBettingDto = Betting.ofZero(new Chips(1), "dom").toDto();
+        assertTrue(Betting.ofFirst(new Chips(5), BettingCase.RAISE_CASE, preBettingDto) instanceof Betting);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void ofFirstExpectDieWithException() {
+        BettingDto preBettingDto = Betting.ofZero(new Chips(1), "dom").toDto();
+        Betting.ofFirst(new Chips(5), BettingCase.DIE_CASE, preBettingDto);
+    }
+
+    @Test
+    public void ofFirstExpectDie() {
+        BettingDto preBettingDto = Betting.ofZero(new Chips(1), "dom").toDto();
+        assertTrue(Betting.ofFirst(new Chips(0), BettingCase.DIE_CASE, preBettingDto) instanceof Betting);
+    }
+
+
+    @Test
+    public void ofGeneral() {
+        BettingDto zeroBettingDto = Betting.ofZero(new Chips(1), "dom").toDto();
+        BettingDto preBettingDto = Betting.ofFirst(new Chips(5), BettingCase.RAISE_CASE, zeroBettingDto).toDto();
+
+        Betting newBetting = Betting.ofGeneral(new Chips(3), BettingCase.RAISE_CASE, preBettingDto);
+
+        System.out.println(newBetting);
+
+        assertTrue(newBetting instanceof Betting);
+    }
+
+    @Test (expected = IllegalArgumentException.class)
+    public void ofGeneralDieCase() {
+        BettingDto zeroBettingDto = Betting.ofZero(new Chips(1), "dom").toDto();
+        BettingDto preBettingDto = Betting.ofFirst(new Chips(5), BettingCase.RAISE_CASE, zeroBettingDto).toDto();
+
+        Betting.ofGeneral(new Chips(3), BettingCase.DIE_CASE, preBettingDto);
     }
 }

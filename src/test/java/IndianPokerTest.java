@@ -55,15 +55,15 @@ public class IndianPokerTest {
     public void 콜일때턴종료() {
 
     }
+//
+//    @Test
+//    public void 첫턴일때Raise맞는지() {
+//    }
 
-    @Test
-    public void 첫턴일때Raise맞는지() {
-    }
-
-    @Test
-    public void 다이일때턴종료() {
-
-    }
+//    @Test
+//    public void 다이일때턴종료() {
+//
+//    }
 
     @Test
     public void 모든칩이바닥났을때_턴이_종료되고_게임이종료되는지() {
@@ -75,9 +75,9 @@ public class IndianPokerTest {
 
     }
 
-    @Test
-    public void 플레이어가가진칩이상을베팅할때() {
-    }
+//    @Test
+//    public void 플레이어가가진칩이상을베팅할때() {
+//    }
 
     @Test
     public void 플레이어가_상대가_가진칩_이상을_배팅할때() {
@@ -104,10 +104,10 @@ public class IndianPokerTest {
 //
 //    }
 
-    @Test
-    public void 새로배팅했을때_전에배팅한_칩이_합산되는지() {
-
-    }
+//    @Test
+//    public void 새로배팅했을때_전에배팅한_칩이_합산되는지() {
+//
+//    }
 
     @Test
     public void 걸어야되는칩이하를배팅하려할때() {

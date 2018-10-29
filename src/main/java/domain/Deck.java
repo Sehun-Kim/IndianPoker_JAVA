@@ -31,4 +31,10 @@ public class Deck {
         return this.deck.remove(FIRST);
     }
 
+    @Override
+    public String toString() {
+        return "Deck{" +
+                "deck=" + deck +
+                '}';
+    }
 }

@@ -1,7 +1,6 @@
 package domain;
 
-import domain.Deck;
-import vo.Chip;
+import vo.Chips;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,11 +18,8 @@ public class Dealer {
         this.player2Deck = new Deck();
     }
 
-    public List<Chip> giveInitChips(int numberOfChips) {
-        List<Chip> chips = new ArrayList<>();
-        for (int i = 0; i < numberOfChips; i++) {
-            chips.add(new Chip());
-        }
+    public Chips giveInitChips(int numberOfChips) {
+        Chips chips = new Chips(numberOfChips);
         return chips;
     }
 

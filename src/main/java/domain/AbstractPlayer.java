@@ -1,7 +1,7 @@
 package domain;
 
 import vo.Card;
-import vo.Chip;
+import vo.Chips;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,41 +10,52 @@ public abstract class AbstractPlayer implements Player {
 
     public static final int FIRST = 0;
     private String name;
-    private List<Chip> chips;
+    private Chips chips;
     private Deck deck;
 
-    protected AbstractPlayer(String name, List<Chip> chips) {
+    protected AbstractPlayer(String name, Chips chips) {
         this.chips = chips;
         this.name = checkName(name);
         this.deck = new Deck();
     }
 
     private String checkName(String name) {
-        if(name.length() > NAME_LENGTH)
+        if (name.length() > NAME_LENGTH)
             throw new IllegalArgumentException("이름의 길이가 너무 깁니다.");
-        if(name.length() == 0)
+        if (name.length() == 0)
             throw new IllegalArgumentException("이름의 길이가 너무 짧습니다.");
         return name;
     }
 
+
     @Override
-    public Card giveACard(){
+    public Betting zeroBetting() {
+        return Betting.ofZero(getChips(1), this.name);
+    }
+
+    @Override
+    public Card giveACard() {
         return this.deck.giveCard();
     }
 
     @Override
-    public String getName(){
+    public String getName() {
         return this.name;
     }
 
     @Override
-    public List<Chip> getChips(int numberOfChips){
-        if(numberOfChips > this.chips.size()) throw new IllegalArgumentException();
+    public Chips getChips(int numberOfChips) {
+        Chips otherChips = new Chips(numberOfChips);
+        this.chips = this.chips.minus(otherChips);
+        return otherChips;
+    }
 
-        List<Chip> bettingChips = new ArrayList<>();
-        for (int i = 0; i < numberOfChips; i++){
-            bettingChips.add(this.chips.remove(FIRST));
-        }
-        return bettingChips;
+    @Override
+    public String toString() {
+        return "AbstractPlayer{" +
+                "name='" + name + '\'' +
+                ", chips=" + chips +
+                ", deck=" + deck +
+                '}';
     }
 }

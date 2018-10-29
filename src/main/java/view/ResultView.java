@@ -1,14 +1,14 @@
 package view;
 
-import vo.Chip;
+import vo.Chips;
 
 import java.util.List;
 
 public class ResultView {
     private String winnerName;
-    private List<Chip> winningChips;
+    private List<Chips> winningChips;
 
-    public List<Chip> getWinningChips() {
+    public List<Chips> getWinningChips() {
         return winningChips;
     }
 

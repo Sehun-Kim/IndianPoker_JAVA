@@ -1,27 +1,25 @@
 package domain;
 
+import dto.BettingDto;
 import vo.BettingCase;
-import vo.Chip;
+import vo.Chips;
 
 import java.util.List;
 
 public class HumanPlayer extends AbstractPlayer {
 
-    public HumanPlayer(String name, List<Chip> chips) {
+    public HumanPlayer(String name, Chips chips) {
         super(name, chips);
     }
 
     @Override
-    public Betting firstBetting(int numberOfChips, BettingCase bettingCase) {
-        if(bettingCase.equals(BettingCase.DIE_CASE)){
-            return Betting.ofFirst(getChips(1), bettingCase, this.getName());
-        }
-        return Betting.ofFirst(getChips(numberOfChips + 1), bettingCase, this.getName());
+    public Betting firstBetting(int numberOfChips, BettingCase bettingCase, BettingDto preBettingDto) {
+        return Betting.ofFirst(getChips(numberOfChips), bettingCase, preBettingDto);
     }
 
     @Override
-    public Betting generalBetting(int numberOfChips, Betting myBetting) {
-        return null;
+    public Betting generalBetting(int numberOfChips, BettingCase bettingCase, BettingDto preBettingDto) {
+        return Betting.ofGeneral(getChips(numberOfChips), bettingCase, preBettingDto);
     }
 
     @Override
@@ -33,4 +31,5 @@ public class HumanPlayer extends AbstractPlayer {
     public boolean equals(Object obj) {
         return super.equals(obj);
     }
+
 }
