@@ -2,42 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff199e5-aa00-40dc-8c8c-070e4faad908" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/BettingChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/controller/TurnTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/domain/BettingCheckerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/vo/ChipsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/TurnOverDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/IndianPokerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/IndianPokerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/domain/AbstractPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/domain/AbstractPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/domain/Betting.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/domain/Betting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/domain/BettingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/domain/BettingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/domain/Dealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/domain/Dealer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/domain/DealerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/domain/DealerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/domain/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/domain/Deck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/domain/HumanPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/domain/HumanPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/domain/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/domain/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/domain/PlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/domain/PlayerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/dto/BettingDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/dto/BettingDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/view/ResultView.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/view/ResultView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/vo/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/vo/Card.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/vo/Chip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/domain/BettingChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/domain/BettingChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/domain/BettingCheckerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/domain/BettingCheckerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/view/InputView.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/view/InputView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/vo/BettingCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/vo/BettingCase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Turn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/AbstractPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/AbstractPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Betting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Betting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Dealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/HumanPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/BettingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/BettingDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/InputView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/ResultView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ResultView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vo/BettingCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vo/BettingCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vo/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vo/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vo/Chip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vo/Chips.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/IndianPokerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IndianPokerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/domain/BettingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/BettingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/domain/DealerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/DealerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/domain/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/BettingChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/BettingChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/controller/TurnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controller/TurnTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/domain/BettingCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/BettingCheckerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,34 +25,36 @@
     <session id="1394161378">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="158" />
+          <entry key="class" value="1" />
+          <entry key="java" value="181" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="158" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="181" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="39" />
-          <entry key="java" value="10526" />
+          <entry key="java" value="12557" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10526" />
+          <entry key="JAVA" value="12557" />
           <entry key="PLAIN_TEXT" value="39" />
         </counts>
       </usages-collector>
@@ -85,12 +62,26 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/IndianPokerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Turn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-291">
-              <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+            <state relative-caret-position="475">
+              <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1729#1730#0" expanded="true" />
+                <element signature="e#1756#1757#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/domain/BettingCheckerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="56" column="20" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,20 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/domain/Betting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/domain/HumanPlayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="21" column="86" selection-start-line="21" selection-start-column="86" selection-end-line="21" selection-end-column="86" />
+            <state relative-caret-position="420">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,22 +102,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Turn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/controller/TurnTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="261">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#653#654#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,12 +118,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/domain/BettingChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#138#139#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#196#197#0" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/InputView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+            <state relative-caret-position="210">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,12 +145,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/vo/BettingCase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="29" />
               <folding>
                 <element signature="e#145#146#0" expanded="true" />
                 <element signature="e#189#190#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#379#380#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -190,8 +160,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -233,10 +203,11 @@
         <option value="$PROJECT_DIR$/src/test/java/domain/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/domain/BettingTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Betting.java" />
-        <option value="$PROJECT_DIR$/src/test/java/domain/BettingCheckerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/IndianPokerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/vo/BettingCase.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/InputView.java" />
+        <option value="$PROJECT_DIR$/src/test/java/domain/BettingCheckerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dto/TurnOverDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/BettingChecker.java" />
         <option value="$PROJECT_DIR$/src/test/java/controller/TurnTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Turn.java" />
@@ -255,6 +226,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -339,6 +312,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IndianPoker_JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IndianPoker_JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -353,15 +334,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540798760536" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540870241895" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -391,7 +370,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BettingCheckerTest">
+  <component name="RunManager" selected="JUnit.TurnTest.firstTurn">
     <configuration name="BettingCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndianPoker_JAVA" />
       <extension name="coverage">
@@ -406,7 +385,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BettingCheckerTest.다이일때_턴_종료" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BettingCheckerTest.numberOfCallChips" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndianPoker_JAVA" />
       <extension name="coverage">
         <pattern>
@@ -416,74 +395,75 @@
       </extension>
       <option name="PACKAGE_NAME" value="domain" />
       <option name="MAIN_CLASS_NAME" value="domain.BettingCheckerTest" />
-      <option name="METHOD_NAME" value="다이일때_턴_종료" />
+      <option name="METHOD_NAME" value="numberOfCallChips" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BettingTest.ofFirstExpectDie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TurnTest.첫배팅콜일때턴종료" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndianPoker_JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="domain.*" />
+          <option name="PATTERN" value="controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="domain" />
-      <option name="MAIN_CLASS_NAME" value="domain.BettingTest" />
-      <option name="METHOD_NAME" value="ofFirstExpectDie" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.TurnTest" />
+      <option name="METHOD_NAME" value="첫배팅콜일때턴종료" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BettingTest.ofGeneralDieCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TurnTest.첫배팅" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndianPoker_JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="domain.*" />
+          <option name="PATTERN" value="controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="domain" />
-      <option name="MAIN_CLASS_NAME" value="domain.BettingTest" />
-      <option name="METHOD_NAME" value="ofGeneralDieCase" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.TurnTest" />
+      <option name="METHOD_NAME" value="첫배팅" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest.generalBettingWithException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TurnTest.firstTurn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndianPoker_JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="domain.*" />
+          <option name="PATTERN" value="controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="domain" />
-      <option name="MAIN_CLASS_NAME" value="domain.PlayerTest" />
-      <option name="METHOD_NAME" value="generalBettingWithException" />
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.TurnTest" />
+      <option name="METHOD_NAME" value="firstTurn" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.PlayerTest.generalBettingWithException" />
-      <item itemvalue="JUnit.BettingCheckerTest.다이일때_턴_종료" />
-      <item itemvalue="JUnit.BettingTest.ofGeneralDieCase" />
-      <item itemvalue="JUnit.BettingTest.ofFirstExpectDie" />
       <item itemvalue="JUnit.BettingCheckerTest" />
+      <item itemvalue="JUnit.BettingCheckerTest.numberOfCallChips" />
+      <item itemvalue="JUnit.TurnTest.첫배팅콜일때턴종료" />
+      <item itemvalue="JUnit.TurnTest.firstTurn" />
+      <item itemvalue="JUnit.TurnTest.첫배팅" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TurnTest.firstTurn" />
+        <item itemvalue="JUnit.TurnTest.첫배팅" />
+        <item itemvalue="JUnit.TurnTest.첫배팅콜일때턴종료" />
+        <item itemvalue="JUnit.BettingCheckerTest.numberOfCallChips" />
         <item itemvalue="JUnit.BettingCheckerTest" />
-        <item itemvalue="JUnit.BettingTest.ofFirstExpectDie" />
-        <item itemvalue="JUnit.BettingTest.ofGeneralDieCase" />
-        <item itemvalue="JUnit.BettingCheckerTest.다이일때_턴_종료" />
-        <item itemvalue="JUnit.PlayerTest.generalBettingWithException" />
       </list>
     </recent_temporary>
   </component>
@@ -501,42 +481,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PlayerTest_generalBetting - 2018.10.29 at 15h 51m 29s.xml">
-      <configuration name="PlayerTest.generalBetting" configurationId="JUnit" />
+    <history-entry file="TurnTest_첫배팅콜일때턴종료 - 2018.10.30 at 11h 58m 01s.xml">
+      <configuration name="TurnTest.첫배팅콜일때턴종료" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlayerTest_generalBettingWithException - 2018.10.29 at 15h 53m 57s.xml">
-      <configuration name="PlayerTest.generalBettingWithException" configurationId="JUnit" />
+    <history-entry file="TurnTest_firstTurn - 2018.10.30 at 11h 59m 53s.xml">
+      <configuration name="TurnTest.firstTurn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlayerTest_generalBettingWithException - 2018.10.29 at 15h 54m 39s.xml">
-      <configuration name="PlayerTest.generalBettingWithException" configurationId="JUnit" />
+    <history-entry file="TurnTest_첫배팅 - 2018.10.30 at 12h 00m 28s.xml">
+      <configuration name="TurnTest.첫배팅" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BettingCheckerTest_다이일때_턴_종료 - 2018.10.29 at 16h 08m 21s.xml">
-      <configuration name="BettingCheckerTest.다이일때_턴_종료" configurationId="JUnit" />
+    <history-entry file="TurnTest_첫배팅 - 2018.10.30 at 12h 00m 39s.xml">
+      <configuration name="TurnTest.첫배팅" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BettingCheckerTest_다이일때_턴_종료 - 2018.10.29 at 16h 08m 49s.xml">
-      <configuration name="BettingCheckerTest.다이일때_턴_종료" configurationId="JUnit" />
+    <history-entry file="TurnTest_첫배팅 - 2018.10.30 at 12h 00m 47s.xml">
+      <configuration name="TurnTest.첫배팅" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BettingTest_ofGeneralDieCase - 2018.10.29 at 16h 13m 48s.xml">
-      <configuration name="BettingTest.ofGeneralDieCase" configurationId="JUnit" />
+    <history-entry file="TurnTest_첫배팅 - 2018.10.30 at 12h 00m 57s.xml">
+      <configuration name="TurnTest.첫배팅" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BettingTest_ofFirstExpectDie - 2018.10.29 at 16h 15m 13s.xml">
-      <configuration name="BettingTest.ofFirstExpectDie" configurationId="JUnit" />
+    <history-entry file="TurnTest_첫배팅 - 2018.10.30 at 12h 01m 11s.xml">
+      <configuration name="TurnTest.첫배팅" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BettingTest_ofFirstExpectDie - 2018.10.29 at 16h 15m 53s.xml">
-      <configuration name="BettingTest.ofFirstExpectDie" configurationId="JUnit" />
+    <history-entry file="TurnTest_firstTurn - 2018.10.30 at 12h 01m 27s.xml">
+      <configuration name="TurnTest.firstTurn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BettingCheckerTest - 2018.10.29 at 16h 22m 20s.xml">
-      <configuration name="BettingCheckerTest" configurationId="JUnit" />
+    <history-entry file="TurnTest_firstTurn - 2018.10.30 at 12h 04m 20s.xml">
+      <configuration name="TurnTest.firstTurn" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BettingCheckerTest - 2018.10.29 at 16h 22m 47s.xml">
-      <configuration name="BettingCheckerTest" configurationId="JUnit" />
+    <history-entry file="TurnTest_firstTurn - 2018.10.30 at 12h 29m 38s.xml">
+      <configuration name="TurnTest.firstTurn" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26979" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27382874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -545,7 +525,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -568,13 +548,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dto/ResultDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MainTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/view/ResultView.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -610,26 +583,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#251#252#0" expanded="true" />
             <element signature="e#282#283#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dto/BettingDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IndianPoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -698,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vo/Chips.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/domain/DealerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -735,76 +681,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/domain/BettingCheckerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/IndianPoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vo/BettingCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/InputView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        <state relative-caret-position="308">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/BettingChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/controller/TurnTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/IndianPokerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="310">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Betting.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/vo/Chips.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="147">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/BettingDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -813,7 +724,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/HumanPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="247">
           <caret line="21" column="86" selection-start-line="21" selection-start-column="86" selection-end-line="21" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -821,12 +732,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Turn.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/ResultDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/TurnOverDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/requests/FilterRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vo/BettingCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Turn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1729#1730#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Betting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/domain/BettingCheckerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/BettingChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/InputView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/controller/TurnTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
           </folding>
         </state>
       </provider>
