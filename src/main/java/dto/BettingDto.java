@@ -29,4 +29,13 @@ public class BettingDto {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "BettingDto{" +
+                "chips=" + chips +
+                ", bettingCase=" + bettingCase +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

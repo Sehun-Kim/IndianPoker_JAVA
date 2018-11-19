@@ -1,5 +1,6 @@
 package domain;
 
+import dto.PlayerDto;
 import vo.Card;
 import vo.Chips;
 
@@ -12,6 +13,7 @@ public abstract class AbstractPlayer implements Player {
     private String name;
     private Chips chips;
     private Deck deck;
+    private Card card;
 
     protected AbstractPlayer(String name, Chips chips) {
         this.chips = chips;
@@ -27,15 +29,24 @@ public abstract class AbstractPlayer implements Player {
         return name;
     }
 
-
-    @Override
-    public Betting zeroBetting() {
-        return Betting.ofZero(getChips(1), this.name);
+    private Card giveACard() {
+        return this.deck.giveCard();
     }
 
     @Override
-    public Card giveACard() {
-        return this.deck.giveCard();
+    public void addChips(Chips totalChips) {
+        this.chips = this.chips.add(totalChips);
+    }
+
+    @Override
+    public PlayerDto toDto(){
+        return new PlayerDto(this.name, this.chips, this.card);
+    }
+
+    @Override
+    public Betting zeroBetting() {
+        this.card = this.giveACard();
+        return Betting.ofZero(getChips(1), this.name);
     }
 
     @Override

@@ -1,12 +1,12 @@
 package controller;
 
-import domain.Betting;
 import domain.HumanPlayer;
 import domain.Player;
 import dto.BettingDto;
 import dto.TurnOverDto;
 import org.junit.Before;
 import org.junit.Test;
+import vo.BettingCase;
 import vo.Chips;
 
 import static org.junit.Assert.*;
@@ -25,16 +25,30 @@ public class TurnTest {
         p2BettingDto = p2.zeroBetting().toDto();
     }
 
+    // 수동 테스트 완료
     @Test
-    public void firstTurn() {
-        assertTrue(Turn.firstTurn(p1, p2, p1BettingDto, p2BettingDto) instanceof TurnOverDto);
+    public void startTurn() {
+
     }
 
+    @Test
+    public void firstOrder() {
+        assertTrue(Turn.startOrder(p1, p2, p1BettingDto, p2BettingDto) instanceof TurnOverDto);
+    }
+
+    @Test
+    public void 배팅확인() {
+        p1BettingDto = p1.firstBetting(2, BettingCase.RAISE_CASE, p1BettingDto).toDto();
+        Turn.run(p1, p2, p1BettingDto, p2BettingDto);
+    }
+
+    // 수동 테스트 완료
     @Test
     public void 일반배팅다이때턴종료() {
 
     }
 
+    // 수동 테스트 완료
     @Test
     public void 일반배팅콜일때턴종료() {
 

@@ -1,16 +1,14 @@
-package domain;
+package dto;
 
-import dto.BettingDto;
-import dto.TurnOverDto;
+import domain.HumanPlayer;
+import domain.Player;
 import org.junit.Before;
 import org.junit.Test;
 import vo.Chips;
 
-import java.util.List;
 import static org.junit.Assert.*;
 
-public class DealerTest {
-    Dealer dealer;
+public class TurnOverDtoTest {
     Player p1;
     Player p2;
     BettingDto p1BettingDto;
@@ -19,7 +17,6 @@ public class DealerTest {
 
     @Before
     public void setUp() throws Exception {
-        dealer = new Dealer();
         p1 = new HumanPlayer("dom", new Chips(20));
         p2 = new HumanPlayer("choising", new Chips(20));
         p1BettingDto = p1.zeroBetting().toDto();
@@ -28,10 +25,14 @@ public class DealerTest {
     }
 
     @Test
-    public void judgeTurn() {
-        dealer.judgeTurn(p1, p2, turnOverDto);
-        System.out.println(p1.toDto());
-        System.out.println(p2.toDto());
-
+    public void getTotalChips() {
+        assertEquals(turnOverDto.getTotalChips(), new Chips(2));
     }
+
+    @Test
+    public void getHalfChips() {
+        assertEquals(turnOverDto.getHalfChips(), new Chips(1));
+    }
+
+
 }

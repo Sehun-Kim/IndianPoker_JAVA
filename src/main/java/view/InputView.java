@@ -10,7 +10,6 @@ public class InputView {
 
     public static String inputName() {
         System.out.println("Player 이름을 입력하시오");
-
         return sc.nextLine();
     }
 
@@ -18,7 +17,7 @@ public class InputView {
         System.out.println("베팅케이스를 입력하세요.");
         System.out.println("1. Call, 2. Raise, 3. Die");
         try{
-            return BettingCase.valueOf(sc.nextInt());
+            return BettingCase.valueOf(Integer.parseInt(sc.nextLine()));
         }
         catch (IllegalArgumentException e){
             System.out.println(e.getMessage());

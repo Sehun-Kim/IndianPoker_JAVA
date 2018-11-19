@@ -1,7 +1,8 @@
+import controller.Turn;
 import domain.Dealer;
-import domain.Deck;
 import domain.HumanPlayer;
 import domain.Player;
+import vo.Chips;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +21,11 @@ public class IndianPoker {
         int numberOfChips = 30;
         Dealer dealer = new Dealer();
 
+        Player p1 = new HumanPlayer("choising" , new Chips(20));
+        Player p2 = new HumanPlayer("dom" , new Chips(20));
 
+
+        Turn.startTurn(p1, p2, dealer);
 
 
 

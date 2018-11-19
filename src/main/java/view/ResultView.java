@@ -1,5 +1,6 @@
 package view;
 
+import dto.PlayerDto;
 import vo.Chips;
 
 import java.util.List;
@@ -14,6 +15,10 @@ public class ResultView {
 
     public String getWinnerName() {
         return winnerName;
+    }
+
+    public static void showOpositPlayerStatus(PlayerDto playerDto){
+        System.out.println(playerDto);
     }
 
 }

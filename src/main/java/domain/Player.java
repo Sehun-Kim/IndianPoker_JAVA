@@ -1,6 +1,7 @@
 package domain;
 
 import dto.BettingDto;
+import dto.PlayerDto;
 import vo.BettingCase;
 import vo.Card;
 import vo.Chips;
@@ -19,7 +20,9 @@ public interface Player {
 
     String getName();
 
-    Card giveACard();
-
     Chips getChips(int numberOfChips);
+
+    PlayerDto toDto();
+
+    void addChips(Chips totalChips);
 }

@@ -1,6 +1,5 @@
 package domain;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import dto.BettingDto;
@@ -8,8 +7,6 @@ import org.junit.Test;
 import vo.BettingCase;
 import vo.Chips;
 
-import java.util.Arrays;
-import java.util.List;
 
 public class BettingTest {
 

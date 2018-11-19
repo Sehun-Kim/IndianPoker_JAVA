@@ -20,8 +20,6 @@ public class BettingCheckerTest {
     Betting generalBettingDie2;
     Betting generalBettingCall2;
 
-
-
     @Before
     public void setUp(){
         zeroBetting = Betting.ofZero(new Chips(1), "choising");
@@ -38,10 +36,10 @@ public class BettingCheckerTest {
         assertFalse(BettingChecker.isProgress(generalBettingDie.toDto()));
     }
 
-//    @Test
-//    public void 콜일때_턴_종료() {
-//        assertFalse(BettingChecker.isProgress(generalBettingCall.toDto()));
-//    }
+    @Test
+    public void 콜일때_턴_종료() {
+        assertFalse(BettingChecker.isProgress(generalBettingCall.toDto()));
+    }
 
     @Test
     public void 레이즈일때_정상_진행() {

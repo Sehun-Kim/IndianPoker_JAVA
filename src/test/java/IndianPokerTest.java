@@ -46,15 +46,15 @@ public class IndianPokerTest {
 //
 //    }
 
-    @Test
-    public void 플레이어일반배팅익셉션() {
-
-    }
-
-    @Test
-    public void 콜일때턴종료() {
-
-    }
+//    @Test
+//    public void 플레이어일반배팅익셉션() {
+//
+//    }
+//
+//    @Test
+//    public void 콜일때턴종료() {
+//
+//    }
 //
 //    @Test
 //    public void 첫턴일때Raise맞는지() {
@@ -85,17 +85,17 @@ public class IndianPokerTest {
 
     }
 
-    @Test
-    public void 비겼을때_칩반반() {
-
-    }
-
-    @Test
-    public void 턴이종료될때_이긴플레이어에게_칩배분() {
-    }
+//    @Test
+//    public void 비겼을때_칩반반() {
+//
+//    }
 
 //    @Test
-//    public void 딜러가_승부를결정() {
+//    public void 턴이종료될때_이긴플레이어에게_칩배분() {
+//    }
+
+//    @Test
+//    public void 딜러가_턴결과_결정() {
 //
 //    }
 

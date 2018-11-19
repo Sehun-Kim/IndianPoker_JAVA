@@ -31,6 +31,10 @@ public class Chips {
         return chips - this.chips;
     }
 
+    public Chips divide(int number) {
+        return new Chips(this.chips / number);
+    }
+
     public int getChips() {
         return chips;
     }

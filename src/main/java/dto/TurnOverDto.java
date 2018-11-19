@@ -1,6 +1,7 @@
 package dto;
 
 import domain.Player;
+import vo.Chips;
 
 public class TurnOverDto {
 
@@ -20,4 +21,20 @@ public class TurnOverDto {
         return player2BettingDto;
     }
 
+    @Override
+    public String toString() {
+        return "TurnOverDto{" +
+                "player1BettingDto=" + player1BettingDto + System.lineSeparator() +
+                ", player2BettingDto=" + player2BettingDto +
+                '}';
+    }
+
+    public Chips getTotalChips() {
+        return player1BettingDto.getChips().add(player2BettingDto.getChips());
+    }
+
+
+    public Chips getHalfChips() {
+        return getTotalChips().divide(2);
+    }
 }

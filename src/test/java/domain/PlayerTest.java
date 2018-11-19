@@ -42,13 +42,6 @@ public class PlayerTest {
     }
 
     @Test
-    public void giveACard() {
-        Player p1 = new HumanPlayer("dom", chips);
-        assertTrue(p1.giveACard() instanceof Card);
-
-    }
-
-    @Test
     public void zeroBetting() {
         Player p1 = new HumanPlayer("dom", chips);
         assertTrue(p1.zeroBetting() instanceof Betting);
