@@ -39,6 +39,10 @@ public class Chips {
         return chips;
     }
 
+    public boolean isZero() {
+        return this.chips == 0;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

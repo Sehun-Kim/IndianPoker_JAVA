@@ -21,12 +21,13 @@ public class IndianPoker {
         int numberOfChips = 30;
         Dealer dealer = new Dealer();
 
-        Player p1 = new HumanPlayer("choising" , new Chips(20));
-        Player p2 = new HumanPlayer("dom" , new Chips(20));
+        Player p1 = new HumanPlayer("choising", new Chips(20));
+        Player p2 = new HumanPlayer("dom", new Chips(20));
 
-
-        Turn.startTurn(p1, p2, dealer);
-
+        int n = 20;
+        while (n-- > 0) {
+            Turn.startTurn(p1, p2, dealer);
+        }
 
 
 

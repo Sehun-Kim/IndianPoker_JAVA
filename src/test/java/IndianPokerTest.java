@@ -65,9 +65,12 @@ public class IndianPokerTest {
 //
 //    }
 
+//    @Test
+//    public void 플레이어가가진칩이상을베팅할때() {
+//    }
+
     @Test
     public void 모든칩이바닥났을때_턴이_종료되고_게임이종료되는지() {
-
     }
 
     @Test
@@ -75,9 +78,9 @@ public class IndianPokerTest {
 
     }
 
-//    @Test
-//    public void 플레이어가가진칩이상을베팅할때() {
-//    }
+    @Test
+    public void 제로배팅후에0개인플레이어가있을때() {
+    }
 
     @Test
     public void 플레이어가_상대가_가진칩_이상을_배팅할때() {
@@ -109,10 +112,10 @@ public class IndianPokerTest {
 //
 //    }
 
-    @Test
-    public void 걸어야되는칩이하를배팅하려할때() {
-
-    }
+//    @Test
+//    public void 걸어야되는칩이하를배팅하려할때() {
+//
+//    }
 
     @Test
     public void 최종승자와패자를결정() {

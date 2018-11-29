@@ -1,13 +1,15 @@
 package domain;
 
+import domain.bettingstate.BettingState;
+import domain.bettingstate.ZeroBettingState;
+import dto.BettingDto;
 import dto.PlayerDto;
+import vo.BettingCase;
 import vo.Card;
 import vo.Chips;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public abstract class AbstractPlayer implements Player {
+    private BettingState bettingState;
 
     public static final int FIRST = 0;
     private String name;
@@ -29,8 +31,16 @@ public abstract class AbstractPlayer implements Player {
         return name;
     }
 
-    private Card giveACard() {
-        return this.deck.giveCard();
+    public Betting betting(int numberOfChips, BettingCase bettingCase, BettingDto preBettingDto) {
+        Betting newBetting =  bettingState.betting(getChips(numberOfChips), bettingCase);
+        this.bettingState = bettingState.changeState(this.chips, newBetting.toDto());
+        return newBetting;
+    }
+
+    @Override
+    public void prepareTurn() {
+        this.card = this.deck.giveCard();
+        this.bettingState = new ZeroBettingState(new BettingDto(new Chips(0), BettingCase.NONE_CASE, this.name));
     }
 
     @Override
@@ -39,20 +49,10 @@ public abstract class AbstractPlayer implements Player {
     }
 
     @Override
-    public PlayerDto toDto(){
+    public PlayerDto toDto() {
         return new PlayerDto(this.name, this.chips, this.card);
     }
 
-    @Override
-    public Betting zeroBetting() {
-        this.card = this.giveACard();
-        return Betting.ofZero(getChips(1), this.name);
-    }
-
-    @Override
-    public String getName() {
-        return this.name;
-    }
 
     @Override
     public Chips getChips(int numberOfChips) {

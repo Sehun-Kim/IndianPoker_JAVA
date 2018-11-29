@@ -1,7 +1,7 @@
 package vo;
 
 public enum BettingCase {
-    CALL_CASE(1),RAISE_CASE(2),DIE_CASE(3);
+    CALL_CASE(1), RAISE_CASE(2), DIE_CASE(3), NONE_CASE(4);
 
     private int caseNumber;
 
@@ -9,9 +9,9 @@ public enum BettingCase {
         this.caseNumber = caseNumber;
     }
 
-    public static BettingCase valueOf(int number){
+    public static BettingCase valueOf(int number) {
         for (BettingCase value : values()) {
-            if(value.getCaseNumber() == number)
+            if (value.getCaseNumber() == number)
                 return value;
         }
         throw new IllegalArgumentException("유효한 베팅 케이스가 아닙니다.");
