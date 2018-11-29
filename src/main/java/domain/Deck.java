@@ -7,28 +7,27 @@ import java.util.Collections;
 import java.util.List;
 
 public class Deck {
-
-    private static final int FIRST = 0;
     private List<Card> deck;
 
     public Deck() {
-        this.deck = initDeck();
-        Collections.shuffle(this.deck);
+        this.deck = this.shuffle(this.init());
     }
 
-    private List<Card> initDeck() {
-        List<Card> deck = new ArrayList<>();
-        for (int i = 1; i <= 10; i++) {
-            deck.add(new Card(i));
-            deck.add(new Card(i));
+    private List<Card> init(){
+        List<Card> cards = new ArrayList<>();
+        for (int i = 1; i <= 10; i++){
+            cards.add(new Card(i));
+            cards.add(new Card(i));
         }
-
-        return deck;
+        return cards;
     }
 
-    public Card giveCard(){
-        if(this.deck.isEmpty()) throw new IndexOutOfBoundsException("deck is empty.");
-        return this.deck.remove(FIRST);
+    public Card drawACard() {
+        return this.deck.remove(0);
     }
 
+    public List<Card> shuffle(List<Card> cards) {
+        Collections.shuffle(cards);
+        return cards;
+    }
 }

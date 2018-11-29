@@ -4,102 +4,67 @@ import static org.junit.Assert.*;
 
 public class IndianPokerTest {
 
-//    @Test(expected = IllegalArgumentException.class)
-//    public void 플레이어생성익셉션() {
-//
+    @Test
+    public void 스무턴이지나면게임은종료() {
+    }
+
+    @Test
+    public void 하나의플레이어라도칩이모두소진되면게임종료() {
+    }
+
+//    @Test
+//    public void 플레이어는베팅할수있다() {
 //    }
 
 //    @Test
-//    public void 딜러생성익셉션() {
-//
+//    public void 플레이어는딜러에게칩을줄수있다() {
 //    }
+
+    @Test
+    public void 딜러가게임의승패를판단한다() {
+    }
+
+    @Test
+    public void 딜러가카드의크기를비교한다() {
+    }
+
+    @Test
+    public void 딜러가게임의승자에게베팅된칩을분배한다() {
+    }
+
+    @Test
+    public void 딜러가카드를비교했을때비겻을경우플레이어에게균둥하게칩배분() {
+    }
 
 //    @Test
-//    public void 플레이어이름일치() {
-//
-//    }
-
-//    @Test
-//    public void 덱생성익셉션() {
-//
-//    }
-
-//    @Test
-//    public void 카드생성익셉션() {
-//
+//    public void 승자는해당턴에배팅된모든칩을얻는다리() {
 //    }
 
     @Test
-    public void 배팅생성익셉션() {
-
+    public void 하나의플레이어라도칩이모두소진되면턴은종료리() {
     }
 
     @Test
-    public void 콜일때턴종료() {
-
+    public void 베팅이콜오어다이일경우턴종료() {
     }
 
     @Test
-    public void 첫턴일때Raise맞는지() {
+    public void 턴이시작할때양쪽플레이어의칩1개씩걸기() {
     }
 
     @Test
-    public void 다이일때턴종료() {
-
+    public void 턴의첫베팅순서에는콜을할수없다() {
     }
 
     @Test
-    public void 모든칩이바닥났을때_턴이_종료되고_게임이종료되는지() {
-
+    public void 레이즈베팅은상대플레이어가가진칩보다많은칩을걸수없다() {
     }
 
     @Test
-    public void 이십턴지났을때게임종료() {
-
+    public void 콜베팅의경우상대가건칩만큼걸어야한다() {
     }
 
     @Test
-    public void 플레이어가가진칩이상을베팅할때() {
+    public void 다이베팅을하면상대플레이어가해당턴의승자가된다() {
     }
-
-    @Test
-    public void 플레이어가_상대가_가진칩_이상을_배팅할때() {
-        //배팅할수없게막
-
-    }
-
-    @Test
-    public void 비겼을때_칩반반() {
-
-    }
-
-    @Test
-    public void 턴이종료될때_이긴플레이어에게_칩배분() {
-    }
-
-    @Test
-    public void 딜러가_승부를결정() {
-
-    }
-
-    @Test
-    public void 딜러가_카드한장배분할때() {
-
-    }
-
-    @Test
-    public void 새로배팅했을때_전에배팅한_칩이_합산되는지() {
-
-    }
-
-    @Test
-    public void 걸어야되는칩이하를배팅하려할때() {
-
-    }
-
-    @Test
-    public void 최종승자와패자를결정() {
-
-    }
-
 }

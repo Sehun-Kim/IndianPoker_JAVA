@@ -1,33 +1,38 @@
 package domain;
 
-import vo.Betting;
-import vo.Card;
-import vo.Chip;
+import vo.Chips;
 
-import java.util.List;
-
-public abstract class AbstractPlayer implements Player {
-
+public abstract class AbstractPlayer implements Player, Winner {
     private String name;
-    private List<Chip> chips;
-    protected Card card;
+    private Deck deck;
+    private Chips chips;
 
-    protected AbstractPlayer(String name, List<Chip> chips) {
+    public AbstractPlayer(String name, Deck deck, Chips chips) {
+        this.name = name;
+        this.deck = deck;
         this.chips = chips;
-        this.name = checkName(name);
     }
 
-    private String checkName(String name) {
-        if(name.length() > NAME_LENGTH)
-            throw new IllegalArgumentException("이름의 길이가 너무 깁니다.");
-        if(name.length() == 0)
-            throw new IllegalArgumentException("이름의 길이가 너무 짧습니다.");
+    public String getName() {
         return name;
     }
 
-    @Override
-    public String getName(){
-        return this.name;
+    public Deck getDeck() {
+        return deck;
     }
 
+    @Override
+    public Chips showChips() {
+        return this.chips;
+    }
+
+    @Override
+    public Chips payAChip(int i) {
+        return this.chips.giveChips(i);
+    }
+
+    @Override
+    public void gainChips(Chips chips) {
+        this.chips.addChips(chips);
+    }
 }
