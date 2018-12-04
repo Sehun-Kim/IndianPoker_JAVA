@@ -18,6 +18,10 @@ public class Chips {
         this.numberOfChips += otherChips.numberOfChips;
     }
 
+    public boolean isEmpty() {
+        return this.numberOfChips == 0;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

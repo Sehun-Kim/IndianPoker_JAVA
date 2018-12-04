@@ -1,7 +1,7 @@
 package vo;
 
 public enum BettingCase {
-    CALL_CASE(1), RAISE_CASE(2), DIE_CASE(3);
+    CALL_CASE(1), RAISE_CASE(2), DIE_CASE(3), NONE_CASE(4);
 
     private int caseNumber;
 

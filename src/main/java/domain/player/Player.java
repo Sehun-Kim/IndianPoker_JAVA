@@ -1,8 +1,8 @@
-package domain;
+package domain.player;
 
 import vo.Chips;
 
 public interface Player {
     Chips showChips();
-    Chips payAChip(int i);
+    Chips payChips(int i);
 }

@@ -1,5 +1,7 @@
-package domain;
+package domain.player;
 
+import domain.Deck;
+import domain.player.AbstractPlayer;
 import vo.Chips;
 
 public class HumanPlayer extends AbstractPlayer {

@@ -1,5 +1,7 @@
 package domain;
 
+import domain.player.HumanPlayer;
+import domain.player.Player;
 import org.junit.Before;
 import org.junit.Test;
 import vo.Chips;
@@ -23,7 +25,7 @@ public class HumanPlayerTest {
 
     @Test
     public void payAChip() {
-        assertTrue(player.payAChip(3) instanceof Chips);
+        assertTrue(player.payChips(3) instanceof Chips);
     }
 
     @Test

@@ -33,7 +33,7 @@ public class IndianPokerTest {
     }
 
     @Test
-    public void 딜러가카드를비교했을때비겻을경우플레이어에게균둥하게칩배분() {
+    public void 딜러가카드를비교했을때비겻을경우플레이어에게균등하게칩배분() {
     }
 
 //    @Test
