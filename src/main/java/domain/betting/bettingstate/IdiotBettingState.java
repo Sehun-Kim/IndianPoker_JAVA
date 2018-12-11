@@ -4,18 +4,15 @@ import domain.player.Player;
 import vo.BettingCase;
 import vo.Chips;
 
-public class IdiotBettingState implements BettingState {
+public class IdiotBettingState extends AbstractBettingState {
 
-    private Chips chips;
-    private BettingCase bettingCase;
 
-    public IdiotBettingState(Chips chips, BettingCase bettingCase) {
-        this.chips = chips;
-        this.bettingCase = bettingCase;
+    public IdiotBettingState(Chips chips, BettingCase bettingCase, Player player) {
+        super(chips, bettingCase, player);
     }
 
     @Override
-    public BettingState betting(Chips chips, BettingCase bettingCase, Player player) {
+    public BettingState betting(Chips chips, BettingCase bettingCase) {
         return null;
     }
 }

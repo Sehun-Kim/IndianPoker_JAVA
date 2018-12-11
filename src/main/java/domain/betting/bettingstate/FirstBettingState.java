@@ -4,19 +4,20 @@ import domain.player.Player;
 import vo.BettingCase;
 import vo.Chips;
 
-public class FirstBettingState implements BettingState {
+public class FirstBettingState extends AbstractBettingState {
 
-    private Chips chips;
-    private BettingCase bettingCase;
-
-    public FirstBettingState(Chips chips, BettingCase bettingCase) {
-        this.chips = chips;
-        this.bettingCase = bettingCase;
+    public FirstBettingState(Chips chips, BettingCase bettingCase, Player player) {
+        super(chips, bettingCase, player);
+        if (bettingCase.equals(BettingCase.CALL_CASE))
+            throw new IllegalArgumentException("첫 베팅은 콜할 수 없습니다.");
     }
 
     @Override
-    public BettingState betting(Chips chips, BettingCase bettingCase, Player player) {
-        if(bettingCase.equals(BettingCase.CALL_CASE)) throw new IllegalArgumentException("첫 베팅은 콜할 수 없습니다.");
-        return new GeneralBettingState(chips, bettingCase);
+    public BettingState betting(Chips chips, BettingCase bettingCase) {
+        if (isIdiot()) return createIdiotBettingState();
+        if (isClose()) return createCloseBettingState(chips, bettingCase);
+        return createGeneralBettingState(chips, bettingCase);
     }
+
+
 }

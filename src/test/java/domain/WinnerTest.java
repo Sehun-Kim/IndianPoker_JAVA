@@ -15,7 +15,7 @@ public class WinnerTest {
 
     @Before
     public void setUp() throws Exception {
-        winner = new HumanPlayer("dom", new Deck(), new Chips(30));
+        winner = new HumanPlayer("dom", new Deck(), new Chips(30), true);
     }
 
     @Test

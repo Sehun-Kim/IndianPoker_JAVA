@@ -6,8 +6,8 @@ import vo.Chips;
 
 public class HumanPlayer extends AbstractPlayer {
 
-    public HumanPlayer(String name, Deck deck, Chips chips) {
-        super(name, deck, chips);
+    public HumanPlayer(String name, Deck deck, Chips chips, boolean firstBetter) {
+        super(name, deck, chips, firstBetter);
     }
 
 

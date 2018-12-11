@@ -4,19 +4,14 @@ import domain.player.Player;
 import vo.BettingCase;
 import vo.Chips;
 
-public class CloseBettingState implements BettingState {
+public class CloseBettingState extends AbstractBettingState {
 
-    private Chips chips;
-    private BettingCase bettingCase;
-
-    public CloseBettingState(Chips chips, BettingCase bettingCase) {
-        this.chips = chips;
-        this.bettingCase = bettingCase;
+    public CloseBettingState(Chips chips, BettingCase bettingCase, Player player) {
+        super(chips, bettingCase, player);
     }
 
     @Override
-    public BettingState betting(Chips chips, Chips remainChips, BettingCase bettingCase) {
-        if(player) return new FirstBettingState(chips, bettingCase);
-        return new GeneralBettingState(chips, bettingCase);
+    public BettingState betting(Chips chips, BettingCase bettingCase) {
+        return null;
     }
 }

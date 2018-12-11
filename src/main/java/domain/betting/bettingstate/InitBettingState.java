@@ -4,17 +4,15 @@ import domain.player.Player;
 import vo.BettingCase;
 import vo.Chips;
 
-public class GeneralBettingState extends AbstractBettingState {
+public class InitBettingState extends AbstractBettingState {
 
-
-    public GeneralBettingState(Chips chips, BettingCase bettingCase, Player player) {
+    public InitBettingState(Chips chips, BettingCase bettingCase, Player player) {
         super(chips, bettingCase, player);
     }
 
     @Override
     public BettingState betting(Chips chips, BettingCase bettingCase) {
-        if(isIdiot()) return createIdiotBettingState();
-        if(isClose()) return createCloseBettingState(chips, bettingCase);
+        if (isIdiot()) return createIdiotBettingState();
         return createGeneralBettingState(chips, bettingCase);
     }
 }

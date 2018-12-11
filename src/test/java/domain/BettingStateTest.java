@@ -1,28 +1,36 @@
 package domain;
 
+import domain.betting.bettingstate.BettingState;
+import domain.betting.bettingstate.GeneralBettingState;
+import domain.player.HumanPlayer;
+import domain.player.Player;
+import org.junit.Before;
 import org.junit.Test;
+import vo.BettingCase;
+import vo.Chips;
+import static org.junit.Assert.*;
 
 public class BettingStateTest {
+    Player player1;
+    Player player2;
+
+
+    @Before
+    public void setUp() throws Exception {
+        player1 = new HumanPlayer("dom", new Deck(), new Chips(30), true);
+        player2 = new HumanPlayer("dom", new Deck(), new Chips(30), false);
+    }
+
 
     @Test
-    public void 베팅스테이트를만들어보자() {
-        // 칩이들어간다.
-        // 베팅케이스가 들어가야한다.
-
-
-        // todo
-        // firstBetting할 지
-        // 처음 베팅케이스를 어떤걸로 만들지 그리고 만들어서 넘겨줄지
+    public void generalBetting() {
+        assertTrue(player2.betting(new Chips(5), BettingCase.RAISE_CASE) instanceof GeneralBettingState);
 
     }
 
-    @Test
-    public void 평범한베팅을할수있는상황() {
-
-    }
-
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void 첫번째라서콜을못하는상황() {
+        player1.betting(new Chips(3), BettingCase.CALL_CASE);
     }
 
     @Test

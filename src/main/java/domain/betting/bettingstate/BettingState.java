@@ -1,5 +1,6 @@
 package domain.betting.bettingstate;
 
+import domain.player.Player;
 import vo.BettingCase;
 import vo.Chips;
 
@@ -7,5 +8,5 @@ import vo.Chips;
 public interface BettingState {
     // 입력한 칩, 입력한 베팅케이스, 베팅하는 플레이어의 남은 칩 수(남은 칩 수로 idiot or close 가기위해)
     // 남은 칩수와 첫번째 시작하는 것 때문에 불린값이 필요해서 플레이어를 넘겨야 할 수 도 있다.
-    BettingState betting(Chips chips, BettingCase bettingCase, Chips remainChips);
+    BettingState betting(Chips chips, BettingCase bettingCase);
 }
