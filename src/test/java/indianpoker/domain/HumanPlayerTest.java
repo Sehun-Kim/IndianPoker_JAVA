@@ -1,5 +1,6 @@
 package indianpoker.domain;
 
+import indianpoker.domain.betting.bettingstate.InitBettingState;
 import indianpoker.domain.player.HumanPlayer;
 import indianpoker.domain.player.Player;
 import org.junit.Before;
@@ -16,6 +17,12 @@ public class HumanPlayerTest {
     public void setUp() throws Exception {
         Deck deck = new Deck();
         player = new HumanPlayer("dom", deck, new Chips(30), true);
+    }
+
+    @Test
+    public void initTurn() {
+        assertTrue(player.initTurn() instanceof InitBettingState);
+        assertTrue(player.initTurn().getChips().equals(new Chips(1)));
     }
 
     @Test

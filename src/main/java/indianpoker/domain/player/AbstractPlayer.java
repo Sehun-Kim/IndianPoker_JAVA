@@ -19,7 +19,6 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
         this.deck = deck;
         this.chips = chips;
         this.firstBetter = firstBetter;
-        this.bettingState = new InitBettingState(payChips(1), BettingCase.RAISE_CASE, this);
     }
 
     public String getName() {
@@ -42,7 +41,7 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
 
     @Override
     public void gainChips(Chips chips) {
-        this.chips.addChips(chips);
+        this.chips = this.chips.addChips(chips);
     }
 
     @Override
@@ -53,6 +52,11 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
     @Override
     public boolean isFirst() {
         return this.firstBetter;
+    }
+
+    @Override
+    public BettingState initTurn() {
+        return this.bettingState = new InitBettingState(this.payChips(1), BettingCase.RAISE_CASE, this);
     }
 
     @Override

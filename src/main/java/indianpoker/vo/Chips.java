@@ -15,8 +15,10 @@ public class Chips {
         return new Chips(numberOfMinusChips);
     }
 
-    public void addChips(Chips otherChips) {
-        this.numberOfChips += otherChips.numberOfChips;
+    public Chips addChips(Chips otherChips) {
+//        this.numberOfChips += otherChips.numberOfChips;
+//        return this;
+        return new Chips(this.numberOfChips + otherChips.numberOfChips);
     }
 
     public boolean isEmpty() {

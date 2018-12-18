@@ -15,6 +15,10 @@ public abstract class AbstractBettingState implements BettingState {
         this.player = player;
     }
 
+    public Chips getChips() {
+        return chips;
+    }
+
     protected BettingState createFirstBettingState(Chips chips, BettingCase bettingCase) {
         if (bettingCase.equals(BettingCase.DIE_CASE)) return createCloseBettingState(chips, bettingCase);
         return new FirstBettingState(chips, bettingCase, this.player);
@@ -25,7 +29,7 @@ public abstract class AbstractBettingState implements BettingState {
         return new GeneralBettingState(chips, bettingCase, this.player);
     }
 
-    protected boolean isFirst() {
+    public boolean isFirst() {
         return player.isFirst();
     }
 

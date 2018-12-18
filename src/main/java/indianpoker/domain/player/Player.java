@@ -8,5 +8,6 @@ public interface Player {
     Chips showChips();
     Chips payChips(int i);
     boolean isFirst();
+    BettingState initTurn();
     BettingState betting(Chips chips, BettingCase bettingCase);
 }
