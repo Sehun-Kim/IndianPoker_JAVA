@@ -15,7 +15,7 @@ public enum BettingCase {
                 return value;
             }
         }
-        throw new IllegalArgumentException("유요한 베팅이 아닙니다.");
+        throw new IllegalArgumentException("유효한 베팅이 아닙니다.");
     }
 
 

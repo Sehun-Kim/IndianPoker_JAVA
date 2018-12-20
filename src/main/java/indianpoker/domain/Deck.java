@@ -23,11 +23,19 @@ public class Deck {
     }
 
     public Card drawACard() {
+        if (deck.isEmpty()) throw new IllegalStateException("Deck is Empty");
         return this.deck.remove(0);
     }
 
     public List<Card> shuffle(List<Card> cards) {
         Collections.shuffle(cards);
         return cards;
+    }
+
+    @Override
+    public String toString() {
+        return "Deck{" +
+                "deckSize=" + deck.size() +
+                '}';
     }
 }

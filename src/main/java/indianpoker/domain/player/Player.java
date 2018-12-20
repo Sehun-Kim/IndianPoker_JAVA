@@ -2,6 +2,7 @@ package indianpoker.domain.player;
 
 import indianpoker.domain.betting.bettingstate.BettingState;
 import indianpoker.vo.BettingCase;
+import indianpoker.vo.Card;
 import indianpoker.vo.Chips;
 
 public interface Player {
@@ -10,4 +11,5 @@ public interface Player {
     boolean isFirst();
     BettingState initTurn();
     BettingState betting(Chips chips, BettingCase bettingCase);
+    Card drawACard();
 }

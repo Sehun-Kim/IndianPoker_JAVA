@@ -14,7 +14,7 @@ public class BettingTableTest extends Fixture {
 
     @Before
     public void setUp() throws Exception {
-        bettingTable = new BettingTable(player1IntiBettingState, player2IntiBettingState);
+        bettingTable = new BettingTable(player1.initTurn(), player2.initTurn());
     }
 
     // player 모두 칩하나씩 걸게한다.
@@ -24,12 +24,24 @@ public class BettingTableTest extends Fixture {
     }
 
     @Test
-    public void addState() {
+    public void addBettingChips() {
         BettingState newBettingState = new FirstBettingState(new Chips(3), BettingCase.RAISE_CASE, player1);
         Chips curChips = bettingTable.getFirstPlayerBettingChips();
 
-        bettingTable.addState(newBettingState);
+        bettingTable.addBettingChips(newBettingState);
         Assert.assertEquals(curChips.addChips(new Chips(3)), bettingTable.getFirstPlayerBettingChips());
+    }
 
+    @Test
+    public void calcDiffChips() {
+        Assert.assertEquals(bettingTable.calcDiffChips(), new Chips(0));
+    }
+
+    @Test
+    public void calcWinningChips() {
+        bettingTable.addBettingChips(player1.betting(new Chips(3), BettingCase.RAISE_CASE));
+        Assert.assertEquals(bettingTable.calcWinningChips(), new Chips(5));
+        bettingTable.addBettingChips(player2.betting(bettingTable.calcDiffChips(), BettingCase.RAISE_CASE));
+        Assert.assertEquals(bettingTable.calcWinningChips(), new Chips(8));
     }
 }

@@ -1,5 +1,6 @@
 package indianpoker.controller;
 
+import indianpoker.domain.Dealer;
 import indianpoker.domain.Deck;
 import indianpoker.domain.betting.BettingTable;
 import indianpoker.domain.player.HumanPlayer;
@@ -13,12 +14,13 @@ public class TurnTest {
     // 둘 중의 한명의 플레이어 칩이 더이상 배팅을 할 수 없으면 배팅을 못하게 막는다.
     Player p1 = new HumanPlayer("dom", new Deck(), new Chips(20), true);
     Player p2 = new HumanPlayer("choi", new Deck(), new Chips(20), false);
+    Dealer dealer = new Dealer(); // dummy data, yet
 
     @Test
     public void start() {
         // 베팅 테이블 만든다.
         // 플레이어 넘겨받는다.
-        Turn.start(p1, p2);
+        Turn.start(p1, p2, dealer);
         // 한 판 스타트
         // init()
         // run()
@@ -27,7 +29,7 @@ public class TurnTest {
     @Test
     public void init() {
         // init 안에서 Betting table 만들고 p1 p2 에게 init betting 주입
-        Assert.assertTrue(Turn.init(p1, p2) instanceof BettingTable);
+        Assert.assertTrue(Turn.init(p1, p2, dealer) instanceof BettingTable);
         // run()
     }
 

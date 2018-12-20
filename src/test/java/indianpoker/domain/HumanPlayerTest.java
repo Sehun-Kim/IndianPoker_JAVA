@@ -3,6 +3,7 @@ package indianpoker.domain;
 import indianpoker.domain.betting.bettingstate.InitBettingState;
 import indianpoker.domain.player.HumanPlayer;
 import indianpoker.domain.player.Player;
+import indianpoker.vo.Card;
 import org.junit.Before;
 import org.junit.Test;
 import indianpoker.vo.Chips;
@@ -26,8 +27,11 @@ public class HumanPlayerTest {
     }
 
     @Test
-    public void betting() {
-        
+    public void drawACard() {
+        Card card = player.drawACard();
+        System.out.println(card);
+        assertTrue(card instanceof Card);
+        System.out.println(player);
     }
 
     @Test

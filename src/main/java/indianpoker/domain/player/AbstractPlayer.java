@@ -4,6 +4,7 @@ import indianpoker.domain.Deck;
 import indianpoker.domain.betting.bettingstate.BettingState;
 import indianpoker.domain.betting.bettingstate.InitBettingState;
 import indianpoker.vo.BettingCase;
+import indianpoker.vo.Card;
 import indianpoker.vo.Chips;
 
 public abstract class AbstractPlayer implements Winner, Loser, Player {
@@ -56,7 +57,13 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
 
     @Override
     public BettingState initTurn() {
+
         return this.bettingState = new InitBettingState(this.payChips(1), BettingCase.RAISE_CASE, this);
+    }
+
+    @Override
+    public Card drawACard() {
+        return deck.drawACard();
     }
 
     @Override
@@ -67,5 +74,16 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
     @Override
     public void changeFirstBetter() {
         this.firstBetter = true;
+    }
+
+    @Override
+    public String toString() {
+        return "AbstractPlayer{" +
+                "firstBetter=" + firstBetter +
+                ", name='" + name + '\'' +
+                ", deck=" + deck +
+                ", chips=" + chips +
+                ", bettingState=" + bettingState +
+                '}';
     }
 }

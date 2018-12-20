@@ -1,5 +1,6 @@
 package support;
 
+import indianpoker.domain.Dealer;
 import indianpoker.domain.Deck;
 import indianpoker.domain.betting.bettingstate.BettingState;
 import indianpoker.domain.betting.bettingstate.InitBettingState;
@@ -16,5 +17,5 @@ public class Fixture {
     public static BettingState player1IntiBettingState = new InitBettingState(new Chips(1), BettingCase.RAISE_CASE, player1);
     public static BettingState player2IntiBettingState = new InitBettingState(new Chips(1), BettingCase.RAISE_CASE, player2);
 
-
+    public static Dealer dealer = new Dealer();
 }

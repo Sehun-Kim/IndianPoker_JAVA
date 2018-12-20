@@ -9,5 +9,4 @@ public class HumanPlayer extends AbstractPlayer {
         super(name, deck, chips, firstBetter);
     }
 
-
 }

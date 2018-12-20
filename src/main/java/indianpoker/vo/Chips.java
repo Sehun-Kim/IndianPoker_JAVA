@@ -10,14 +10,12 @@ public class Chips {
     }
 
     public Chips giveChips(int numberOfMinusChips) {
-        if(numberOfChips < numberOfMinusChips) throw new IllegalArgumentException("남은 Chips가 부족합니다.");
+        if (numberOfChips < numberOfMinusChips) throw new IllegalArgumentException("남은 Chips가 부족합니다.");
         this.numberOfChips -= numberOfMinusChips;
         return new Chips(numberOfMinusChips);
     }
 
     public Chips addChips(Chips otherChips) {
-//        this.numberOfChips += otherChips.numberOfChips;
-//        return this;
         return new Chips(this.numberOfChips + otherChips.numberOfChips);
     }
 
@@ -33,6 +31,14 @@ public class Chips {
         return numberOfChips == chips.numberOfChips;
     }
 
+    public Chips subChips(Chips other) {
+        return new Chips(Math.abs(this.numberOfChips - other.numberOfChips));
+    }
+
+    public Chips halfChips(){
+        return new Chips(this.numberOfChips / 2);
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(numberOfChips);
@@ -44,5 +50,4 @@ public class Chips {
                 "numberOfChips=" + numberOfChips +
                 '}';
     }
-
 }
