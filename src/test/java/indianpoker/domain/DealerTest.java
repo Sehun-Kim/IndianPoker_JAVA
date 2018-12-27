@@ -1,32 +1,77 @@
 package indianpoker.domain;
 
-import indianpoker.domain.player.Loser;
-import indianpoker.domain.player.Winner;
+import indianpoker.domain.player.Player;
+import indianpoker.vo.Card;
+import indianpoker.vo.Chips;
 import org.junit.Before;
 import org.junit.Test;
 import support.Fixture;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.junit.Assert.*;
 
-// 1224에는 여기를 해야해
 public class DealerTest extends Fixture {
+    private Dealer testDealer = new Dealer();;
 
-    @Before
-    public void setUp() throws Exception {
-        dealer.receivePlayerCards(player1.drawACard(), player2.drawACard());
+    @Test
+    public void receivePlayerCards() {
+        Map<Player, Card> map =  testDealer.receivePlayerCards(player1, player2);
+        for (Card card : map.values()) {
+            System.out.println(card);
+        }
     }
 
     @Test
-    public void name() {
+    public void getPlayerCard() {
+        testDealer.drawPlayerCards(player1, player2);
+        System.out.println(testDealer.getPlayerCard(player1));
+        System.out.println(testDealer.getPlayerCard(player2));
+    }
+
+    private void settingCards(int p1Card, int p2Card){
+        Map<Player, Card> playerCards = new HashMap<>();
+        playerCards.put(player1, new Card(p1Card));
+        playerCards.put(player2, new Card(p2Card));
+        dealer.drawPlayerCards(playerCards);
     }
 
     @Test
-    public void draw() {
-        dealer.draw((Winner) player1, (Winner)player2);
+    public void judge_turn_draw() {
+        settingCards(1,1);
+
+        Chips p1CurChip = player1.showChips();
+        Chips p2CurChip = player2.showChips();
+
+        System.out.println(dealer.judgeTurn(player1, player2, new Chips(2)));
+        assertEquals(p1CurChip.addChips(new Chips(1)), player1.showChips());
+        assertEquals(p2CurChip.addChips(new Chips(1)), player2.showChips());
     }
 
     @Test
-    public void winOrLose() {
-        dealer.winOrLose((Winner) player1, (Loser) player2);
+    public void judge_turn_p1win() {
+        settingCards(5,1);
+
+        Chips p1CurChip = player1.showChips();
+        Chips p2CurChip = player2.showChips();
+
+        System.out.println(dealer.judgeTurn(player1, player2, new Chips(5)));
+        assertEquals(p1CurChip.addChips(new Chips(5)), player1.showChips());
+        assertEquals(p2CurChip, player2.showChips());
     }
+
+
+    @Test
+    public void judge_turn_p2win() {
+        settingCards(1,5);
+
+        Chips p1CurChip = player1.showChips();
+        Chips p2CurChip = player2.showChips();
+
+        System.out.println(dealer.judgeTurn(player1, player2, new Chips(5)));
+        assertEquals(p1CurChip, player1.showChips());
+        assertEquals(p2CurChip.addChips(new Chips(5)), player2.showChips());
+    }
+
 }

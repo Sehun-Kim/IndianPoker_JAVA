@@ -14,14 +14,10 @@ public class BettingTableTest extends Fixture {
 
     @Before
     public void setUp() throws Exception {
-        bettingTable = new BettingTable(player1.initTurn(), player2.initTurn());
+        bettingTable = BettingTable.ofPlayers(player1, player2);
     }
 
     // player 모두 칩하나씩 걸게한다.
-    @Test
-    public void constructor() {
-        new BettingTable(player1IntiBettingState, player2IntiBettingState);
-    }
 
     @Test
     public void addBettingChips() {

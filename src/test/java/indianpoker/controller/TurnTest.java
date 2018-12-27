@@ -2,14 +2,16 @@ package indianpoker.controller;
 
 import indianpoker.domain.Dealer;
 import indianpoker.domain.Deck;
-import indianpoker.domain.betting.BettingTable;
+
 import indianpoker.domain.player.HumanPlayer;
 import indianpoker.domain.player.Player;
+import indianpoker.exception.EmptyChipException;
 import indianpoker.vo.Chips;
-import org.junit.Assert;
-import org.junit.Test;
 
-public class TurnTest {
+import org.junit.Test;
+import support.Fixture;
+
+public class TurnTest extends Fixture {
     // 턴테이블에 배팅스테이트를 넘겨줄 때 여기서 검사해서
     // 둘 중의 한명의 플레이어 칩이 더이상 배팅을 할 수 없으면 배팅을 못하게 막는다.
     Player p1 = new HumanPlayer("dom", new Deck(), new Chips(20), true);
@@ -26,16 +28,10 @@ public class TurnTest {
         // run()
     }
 
-    @Test
-    public void init() {
-        // init 안에서 Betting table 만들고 p1 p2 에게 init betting 주입
-        Assert.assertTrue(Turn.init(p1, p2, dealer) instanceof BettingTable);
-        // run()
-    }
-
-    @Test
-    public void run() {
+    @Test(expected = EmptyChipException.class)
+    public void run_with_empty_chip() {
         // 사용자 입력(칩갯수 , 베팅케이스) 유효성 검사.
-        //
+        Player dom = new HumanPlayer("dom", new Deck(), new Chips(0), false);
+        Turn.run(dom, p1, bettingTable);
     }
 }

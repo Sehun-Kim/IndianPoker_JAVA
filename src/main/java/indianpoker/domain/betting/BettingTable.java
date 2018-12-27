@@ -2,6 +2,7 @@ package indianpoker.domain.betting;
 
 import indianpoker.domain.betting.bettingstate.BettingState;
 import indianpoker.domain.betting.bettingstate.CloseBettingState;
+import indianpoker.domain.player.Player;
 import indianpoker.vo.Chips;
 
 // 턴에서 칩이 쌓이는 곳
@@ -9,8 +10,14 @@ public class BettingTable {
     private Chips firstPlayerBettingChips;
     private Chips lastPlayerBettingChips;
 
-    // addState할 때 first last 골라서 알아서 들어가게
-    public BettingTable(BettingState firstPlayerInitBettingState, BettingState lastPlayerInitBettingState) {
+    public static BettingTable ofPlayers(Player player1, Player player2) {
+        if (player1.isFirst()) {
+            return new BettingTable(player1.initTurn(), player2.initTurn());
+        }
+        return new BettingTable(player2.initTurn(), player1.initTurn());
+    }
+
+    private BettingTable(BettingState firstPlayerInitBettingState, BettingState lastPlayerInitBettingState) {
         this.firstPlayerBettingChips = firstPlayerInitBettingState.getChips();
         this.lastPlayerBettingChips = lastPlayerInitBettingState.getChips();
     }

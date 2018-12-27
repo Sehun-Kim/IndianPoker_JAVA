@@ -3,9 +3,12 @@ package indianpoker.domain.player;
 import indianpoker.domain.Deck;
 import indianpoker.domain.betting.bettingstate.BettingState;
 import indianpoker.domain.betting.bettingstate.InitBettingState;
+import indianpoker.dto.PlayerDto;
 import indianpoker.vo.BettingCase;
 import indianpoker.vo.Card;
 import indianpoker.vo.Chips;
+
+import java.util.Objects;
 
 public abstract class AbstractPlayer implements Winner, Loser, Player {
     private boolean firstBetter;
@@ -57,7 +60,6 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
 
     @Override
     public BettingState initTurn() {
-
         return this.bettingState = new InitBettingState(this.payChips(1), BettingCase.RAISE_CASE, this);
     }
 
@@ -77,6 +79,26 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
     }
 
     @Override
+    public PlayerDto toDto() {
+        return new PlayerDto(this.name, this.chips);
+    }
+
+    @Override
+    public Winner toWinner() {
+        return (Winner) this;
+    }
+
+    @Override
+    public Loser toLoser() {
+        return (Loser) this;
+    }
+
+    @Override
+    public Player toPlayer() {
+        return (Player) this;
+    }
+
+    @Override
     public String toString() {
         return "AbstractPlayer{" +
                 "firstBetter=" + firstBetter +
@@ -85,5 +107,18 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
                 ", chips=" + chips +
                 ", bettingState=" + bettingState +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AbstractPlayer that = (AbstractPlayer) o;
+        return Objects.equals(name, that.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 }
