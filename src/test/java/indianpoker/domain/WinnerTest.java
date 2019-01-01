@@ -15,13 +15,13 @@ public class WinnerTest {
 
     @Before
     public void setUp() throws Exception {
-        winner = new HumanPlayer("dom", new Deck(), new Chips(30), true);
+        winner = new HumanPlayer("dom", new Deck(), Chips.ofNumberOfChips(30), true);
     }
 
     @Test
     public void gainChips() {
-        winner.gainChips(new Chips(5));
+        winner.gainChips(Chips.ofNumberOfChips(5));
         Player player = (AbstractPlayer)winner;
-        assertEquals(player.showChips(), new Chips(35));
+        assertEquals(player.showChips(), Chips.ofNumberOfChips(35));
     }
 }

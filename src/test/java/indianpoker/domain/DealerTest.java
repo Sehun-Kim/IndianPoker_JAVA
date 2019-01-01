@@ -44,9 +44,9 @@ public class DealerTest extends Fixture {
         Chips p1CurChip = player1.showChips();
         Chips p2CurChip = player2.showChips();
 
-        System.out.println(dealer.judgeTurn(player1, player2, new Chips(2)));
-        assertEquals(p1CurChip.addChips(new Chips(1)), player1.showChips());
-        assertEquals(p2CurChip.addChips(new Chips(1)), player2.showChips());
+        System.out.println(dealer.judgeTurn(player1, player2, Chips.ofNumberOfChips(2)));
+        assertEquals(p1CurChip.addChips(Chips.ofNumberOfChips(1)), player1.showChips());
+        assertEquals(p2CurChip.addChips(Chips.ofNumberOfChips(1)), player2.showChips());
     }
 
     @Test
@@ -56,8 +56,8 @@ public class DealerTest extends Fixture {
         Chips p1CurChip = player1.showChips();
         Chips p2CurChip = player2.showChips();
 
-        System.out.println(dealer.judgeTurn(player1, player2, new Chips(5)));
-        assertEquals(p1CurChip.addChips(new Chips(5)), player1.showChips());
+        System.out.println(dealer.judgeTurn(player1, player2, Chips.ofNumberOfChips(5)));
+        assertEquals(p1CurChip.addChips(Chips.ofNumberOfChips(5)), player1.showChips());
         assertEquals(p2CurChip, player2.showChips());
     }
 
@@ -69,9 +69,9 @@ public class DealerTest extends Fixture {
         Chips p1CurChip = player1.showChips();
         Chips p2CurChip = player2.showChips();
 
-        System.out.println(dealer.judgeTurn(player1, player2, new Chips(5)));
+        System.out.println(dealer.judgeTurn(player1, player2, Chips.ofNumberOfChips(5)));
         assertEquals(p1CurChip, player1.showChips());
-        assertEquals(p2CurChip.addChips(new Chips(5)), player2.showChips());
+        assertEquals(p2CurChip.addChips(Chips.ofNumberOfChips(5)), player2.showChips());
     }
 
 }

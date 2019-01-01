@@ -40,7 +40,8 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
 
     @Override
     public Chips payChips(int i) {
-        return this.chips.giveChips(i);
+        this.chips = chips.giveChips(i);
+        return Chips.ofNumberOfChips(i);
     }
 
     @Override

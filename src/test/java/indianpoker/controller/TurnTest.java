@@ -14,8 +14,8 @@ import support.Fixture;
 public class TurnTest extends Fixture {
     // 턴테이블에 배팅스테이트를 넘겨줄 때 여기서 검사해서
     // 둘 중의 한명의 플레이어 칩이 더이상 배팅을 할 수 없으면 배팅을 못하게 막는다.
-    Player p1 = new HumanPlayer("dom", new Deck(), new Chips(20), true);
-    Player p2 = new HumanPlayer("choi", new Deck(), new Chips(20), false);
+    Player p1 = new HumanPlayer("dom", new Deck(), Chips.ofNumberOfChips(20), true);
+    Player p2 = new HumanPlayer("choi", new Deck(), Chips.ofNumberOfChips(20), false);
     Dealer dealer = new Dealer(); // dummy data, yet
 
     @Test
@@ -31,7 +31,7 @@ public class TurnTest extends Fixture {
     @Test(expected = EmptyChipException.class)
     public void run_with_empty_chip() {
         // 사용자 입력(칩갯수 , 베팅케이스) 유효성 검사.
-        Player dom = new HumanPlayer("dom", new Deck(), new Chips(0), false);
+        Player dom = new HumanPlayer("dom", new Deck(), Chips.ofZero(), false);
         Turn.run(dom, p1, bettingTable);
     }
 }

@@ -5,18 +5,26 @@ import java.util.Objects;
 public class Chips {
     private int numberOfChips;
 
-    public Chips(int numberOfChips) {
+    public static Chips ofZero() {
+        return new Chips(0);
+    }
+
+    public static Chips ofNumberOfChips(int numberOfChips) {
+        return new Chips(numberOfChips);
+    }
+
+    private Chips(int numberOfChips) {
+        if (numberOfChips < 0)
+            throw new IllegalArgumentException("NOT ENOUGH CHIPS");
         this.numberOfChips = numberOfChips;
     }
 
     public Chips giveChips(int numberOfMinusChips) {
-        if (numberOfChips < numberOfMinusChips) throw new IllegalArgumentException("남은 Chips가 부족합니다.");
-        this.numberOfChips -= numberOfMinusChips;
-        return new Chips(numberOfMinusChips);
+        return Chips.ofNumberOfChips(this.numberOfChips -= numberOfMinusChips);
     }
 
     public Chips addChips(Chips otherChips) {
-        return new Chips(this.numberOfChips + otherChips.numberOfChips);
+        return Chips.ofNumberOfChips(this.numberOfChips + otherChips.numberOfChips);
     }
 
     public boolean isEmpty() {
@@ -32,11 +40,11 @@ public class Chips {
     }
 
     public Chips subChips(Chips other) {
-        return new Chips(Math.abs(this.numberOfChips - other.numberOfChips));
+        return Chips.ofNumberOfChips(Math.abs(this.numberOfChips - other.numberOfChips));
     }
 
-    public Chips halfChips(){
-        return new Chips(this.numberOfChips / 2);
+    public Chips halfChips() {
+        return Chips.ofNumberOfChips(this.numberOfChips / 2);
     }
 
     @Override

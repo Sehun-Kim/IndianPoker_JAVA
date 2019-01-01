@@ -17,13 +17,13 @@ public class HumanPlayerTest {
     @Before
     public void setUp() throws Exception {
         Deck deck = new Deck();
-        player = new HumanPlayer("dom", deck, new Chips(30), true);
+        player = new HumanPlayer("dom", deck, Chips.ofNumberOfChips(30), true);
     }
 
     @Test
     public void initTurn() {
         assertTrue(player.initTurn() instanceof InitBettingState);
-        assertTrue(player.initTurn().getChips().equals(new Chips(1)));
+        assertTrue(player.initTurn().getChips().equals(Chips.ofNumberOfChips(1)));
     }
 
     @Test
