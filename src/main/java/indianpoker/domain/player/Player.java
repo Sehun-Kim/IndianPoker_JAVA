@@ -8,7 +8,7 @@ import indianpoker.vo.Chips;
 
 public interface Player {
     Chips showChips();
-    Chips payChips(int i);
+    Chips payChips(Chips minusChips);
     boolean isFirst();
     BettingState initTurn();
     BettingState betting(Chips chips, BettingCase bettingCase);

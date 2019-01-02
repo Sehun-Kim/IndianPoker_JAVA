@@ -8,17 +8,25 @@ import org.junit.Before;
 import org.junit.Test;
 import indianpoker.vo.BettingCase;
 import indianpoker.vo.Chips;
+import support.Fixture;
+
 import static org.junit.Assert.*;
 
-public class BettingStateTest {
+public class BettingStateTest extends Fixture {
     Player player1;
     Player player2;
-
 
     @Before
     public void setUp() throws Exception {
         player1 = new HumanPlayer("dom", new Deck(), Chips.ofNumberOfChips(30), true);
         player2 = new HumanPlayer("dom", new Deck(), Chips.ofNumberOfChips(30), false);
+        player1.initTurn();
+        player2.initTurn();
+    }
+
+    @Test
+    public void isCloseBettingState() {
+        assertTrue(player1.betting(Chips.ofNumberOfChips(0), BettingCase.DIE_CASE) instanceof CloseBettingState);
     }
 
     @Test

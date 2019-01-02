@@ -15,7 +15,6 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
     private String name;
     private Deck deck;
     private Chips chips;
-
     private BettingState bettingState;
 
     public AbstractPlayer(String name, Deck deck, Chips chips, boolean firstBetter) {
@@ -39,9 +38,9 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
     }
 
     @Override
-    public Chips payChips(int i) {
-        this.chips = chips.giveChips(i);
-        return Chips.ofNumberOfChips(i);
+    public Chips payChips(Chips minusChips) {
+        this.chips = this.chips.subChips(minusChips);
+        return minusChips;
     }
 
     @Override
@@ -61,7 +60,7 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
 
     @Override
     public BettingState initTurn() {
-        return this.bettingState = new InitBettingState(this.payChips(1), BettingCase.RAISE_CASE, this);
+        return this.bettingState = new InitBettingState(this.payChips(Chips.ofNumberOfChips(1)), BettingCase.RAISE_CASE, this);
     }
 
     @Override

@@ -36,7 +36,7 @@ public class HumanPlayerTest {
 
     @Test
     public void payAChip() {
-        assertTrue(player.payChips(3) instanceof Chips);
+        assertTrue(player.payChips(Chips.ofNumberOfChips(3)) instanceof Chips);
     }
 
     @Test

@@ -22,16 +22,16 @@ public class TurnTest extends Fixture {
     public void start() {
         // 베팅 테이블 만든다.
         // 플레이어 넘겨받는다.
-        Turn.start(p1, p2, dealer);
+//        Turn.start(p1, p2, dealer);
         // 한 판 스타트
         // init()
         // run()
     }
 
-    @Test(expected = EmptyChipException.class)
-    public void run_with_empty_chip() {
-        // 사용자 입력(칩갯수 , 베팅케이스) 유효성 검사.
-        Player dom = new HumanPlayer("dom", new Deck(), Chips.ofZero(), false);
-        Turn.run(dom, p1, bettingTable);
-    }
+//    @Test(expected = EmptyChipException.class)
+//    public void run_with_empty_chip() {
+//        // 사용자 입력(칩갯수 , 베팅케이스) 유효성 검사.
+//        Player dom = new HumanPlayer("dom", new Deck(), Chips.ofZero(), false);
+////        Turn.run(dom, p1, bettingTable, dealer);
+//    }
 }

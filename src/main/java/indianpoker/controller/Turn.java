@@ -2,9 +2,12 @@ package indianpoker.controller;
 
 import indianpoker.domain.Dealer;
 import indianpoker.domain.betting.BettingTable;
-import indianpoker.domain.betting.bettingstate.BettingState;
 import indianpoker.domain.player.Player;
+import indianpoker.dto.TurnResultDto;
+import indianpoker.exception.CanNotCallCaseException;
 import indianpoker.exception.EmptyChipException;
+import indianpoker.view.InputView;
+import indianpoker.vo.BettingCase;
 import indianpoker.vo.Chips;
 import support.util.ChipExtractorUtil;
 
@@ -14,23 +17,58 @@ public class Turn {
     public static void start(Player player1, Player player2, Dealer dealer) {
         dealer.drawPlayerCards(player1, player2); // 뷰에 상대 카드가 뭔지 보여줄 것을 리턴
         BettingTable bettingTable = new BettingTable();
-        ChipExtractorUtil.addBettingChips(player1.initTurn(), bettingTable);
-        ChipExtractorUtil.addBettingChips(player2.initTurn(), bettingTable);
+        ChipExtractorUtil.addAllBettingChips(player1.initTurn(), player2.initTurn(), bettingTable);
 
-        // 위에꺼 의심하지 맙시다. 익셉션이 안납니다. 저희 다 검증했습니다.
-        // 배팅 테이블 만들 때 0개에서 칩빼려고 한다면 익셉션이 나겠지만, 그런 상황이 오지 않게끔 윗단에서 막아야 할 것이야. 정신차리게.
         try {
-            run(player1, player2, bettingTable);
+            orderToRun(player1, player2, bettingTable, dealer);
         } catch (EmptyChipException e) {
-            dealer.judgeTurn(player1, player2, bettingTable.calcWinningChips());
+            dealer.judgeCallCase(player1, player2, bettingTable.calcWinningChips());
         }
+
     }
 
-    static void run(Player player1, Player player2, BettingTable bettingTable) {
-        checkEmptyChipException(player1.showChips(), player2.showChips());
+    static TurnResultDto run(Player better, Player otherPlayer, BettingTable bettingTable, Dealer dealer) {
+        checkEmptyChipException(better.showChips(), otherPlayer.showChips());
+        BettingCase bettingCase = InputView.inputBettingCase();
 
+        if (bettingCase.equals(BettingCase.DIE_CASE)) {
+            return bettingDieCase(better, otherPlayer, bettingTable, dealer, bettingCase);
+        }
+        if (bettingCase.equals(BettingCase.CALL_CASE)) {
+            return bettingCallCase(better, otherPlayer, bettingTable, dealer, bettingCase);
+        }
+        //raiseBetting
+        return bettingRaiseCase(better, otherPlayer, bettingTable, dealer, bettingCase);
 
+    }
 
+    private static TurnResultDto bettingRaiseCase(Player better, Player otherPlayer, BettingTable bettingTable, Dealer dealer, BettingCase bettingCase) {
+        Chips chips = InputView.inputChip(bettingTable.calcDiffChips(), better.showChips(), otherPlayer.showChips());
+        ChipExtractorUtil.addBettingChips(better.betting(better.payChips(chips), bettingCase), bettingTable);
+        return run(otherPlayer, better, bettingTable, dealer);
+    }
+
+    private static TurnResultDto bettingCallCase(Player better, Player otherPlayer, BettingTable bettingTable, Dealer dealer, BettingCase bettingCase) {
+        Chips chips = bettingTable.calcDiffChips();
+        try {
+            ChipExtractorUtil.addBettingChips(better.betting(better.payChips(chips), bettingCase), bettingTable);
+        } catch (CanNotCallCaseException e) {
+            return run(better, otherPlayer, bettingTable, dealer);
+        }
+
+        return dealer.judgeCallCase(better, otherPlayer, bettingTable.calcWinningChips());
+    }
+
+    private static TurnResultDto bettingDieCase(Player better, Player otherPlayer, BettingTable bettingTable, Dealer dealer, BettingCase bettingCase) {
+        ChipExtractorUtil.addBettingChips(better.betting(Chips.ofZero(), bettingCase), bettingTable);
+        return dealer.judgeDieCase(better, otherPlayer, bettingTable.calcWinningChips());
+    }
+
+    private static TurnResultDto orderToRun(Player player1, Player player2, BettingTable bettingTable, Dealer dealer) {
+        if (player1.isFirst())
+            return run(player1, player2, bettingTable, dealer);
+
+        return run(player2, player1, bettingTable, dealer);
     }
 
     private static void checkEmptyChipException(Chips player1Chips, Chips player2Chips) {

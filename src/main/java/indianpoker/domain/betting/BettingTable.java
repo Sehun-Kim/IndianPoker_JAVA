@@ -21,7 +21,7 @@ public class BettingTable {
     }
 
     public Chips calcDiffChips() {
-        return this.firstPlayerBettingChips.subChips(this.lastPlayerBettingChips);
+        return this.firstPlayerBettingChips.absSubChips(this.lastPlayerBettingChips);
     }
 
     public Chips calcWinningChips() {

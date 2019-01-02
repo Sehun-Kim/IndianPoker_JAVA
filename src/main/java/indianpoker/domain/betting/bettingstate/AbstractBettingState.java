@@ -40,4 +40,9 @@ public abstract class AbstractBettingState implements BettingState {
     private boolean isClose(BettingCase bettingCase) {
         return bettingCase.equals(BettingCase.CALL_CASE) || bettingCase.equals(BettingCase.DIE_CASE);
     }
+
+    @Override
+    public boolean isCloseBettingState() {
+        return (this instanceof CloseBettingState);
+    }
 }

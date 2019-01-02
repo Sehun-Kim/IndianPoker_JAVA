@@ -2,7 +2,7 @@ package indianpoker.vo;
 
 import java.util.Objects;
 
-public class Chips {
+public class Chips implements Comparable<Chips>{
     private int numberOfChips;
 
     public static Chips ofZero() {
@@ -19,16 +19,28 @@ public class Chips {
         this.numberOfChips = numberOfChips;
     }
 
-    public Chips giveChips(int numberOfMinusChips) {
-        return Chips.ofNumberOfChips(this.numberOfChips -= numberOfMinusChips);
+    public Chips subChips (Chips minusChips) {
+        return Chips.ofNumberOfChips(this.numberOfChips - minusChips.numberOfChips);
+    }
+
+    public Chips absSubChips(Chips other) {
+        return Chips.ofNumberOfChips(Math.abs(this.numberOfChips - other.numberOfChips));
     }
 
     public Chips addChips(Chips otherChips) {
         return Chips.ofNumberOfChips(this.numberOfChips + otherChips.numberOfChips);
     }
 
+    public Chips halfChips() {
+        return Chips.ofNumberOfChips(this.numberOfChips / 2);
+    }
+
     public boolean isEmpty() {
         return this.numberOfChips == 0;
+    }
+
+    public int getNumberOfChips() {
+        return numberOfChips;
     }
 
     @Override
@@ -37,14 +49,6 @@ public class Chips {
         if (o == null || getClass() != o.getClass()) return false;
         Chips chips = (Chips) o;
         return numberOfChips == chips.numberOfChips;
-    }
-
-    public Chips subChips(Chips other) {
-        return Chips.ofNumberOfChips(Math.abs(this.numberOfChips - other.numberOfChips));
-    }
-
-    public Chips halfChips() {
-        return Chips.ofNumberOfChips(this.numberOfChips / 2);
     }
 
     @Override
@@ -58,4 +62,12 @@ public class Chips {
                 "numberOfChips=" + numberOfChips +
                 '}';
     }
+
+    @Override
+    public int compareTo(Chips other) {
+        if(this.numberOfChips > other.numberOfChips) return 1;
+        if(this.numberOfChips < other.numberOfChips) return -1;
+        return 0;
+    }
+
 }

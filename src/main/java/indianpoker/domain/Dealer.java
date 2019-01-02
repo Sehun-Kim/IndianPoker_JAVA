@@ -30,17 +30,25 @@ public class Dealer {
         return playerCards;
     }
 
-    public TurnResultDto judgeTurn(Player player1, Player player2, Chips winningChips) {
+    public TurnResultDto judgeDieCase(Player loser, Player winner, Chips winningChips) {
+        return this.winOrLose(winner.toWinner(), loser.toLoser(), winningChips);
+    }
+
+    public TurnResultDto judgeCallCase(Player player1, Player player2, Chips winningChips) {
+        System.out.println(player1.toDto().getName() + " : " + getPlayerCard(player1));
+        System.out.println(player2.toDto().getName() + " : " + getPlayerCard(player2));
+
         if (getPlayerCard(player1).compareTo(getPlayerCard(player2)) == 0) {
-            return this.draw((Winner) player1, (Winner) player2, winningChips);
+            return this.draw(player1.toWinner(), player2.toWinner(), winningChips);
         }
 
         if (getPlayerCard(player1).compareTo(getPlayerCard(player2)) == 1) {
-            return this.winOrLose((Winner) player1, (Loser) player2, winningChips);
+            return this.winOrLose(player1.toWinner(), player2.toLoser(), winningChips);
         }
 
-        return this.winOrLose((Winner) player2, (Loser) player1, winningChips);
+        return this.winOrLose(player2.toWinner(), player1.toLoser(), winningChips);
     }
+
 
     public Card getPlayerCard(Player player) {
         return this.playerCards.get(player);

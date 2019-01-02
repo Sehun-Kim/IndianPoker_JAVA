@@ -10,4 +10,9 @@ public class ChipExtractorUtil {
         if (!bettingState.isFirst())
             bettingTable.addLast(bettingState.getChips());
     }
+
+    public static void addAllBettingChips(BettingState bettingState1, BettingState bettingState2, BettingTable bettingTable) {
+        addBettingChips(bettingState1, bettingTable);
+        addBettingChips(bettingState2, bettingTable);
+    }
 }
