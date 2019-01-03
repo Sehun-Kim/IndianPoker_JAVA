@@ -1,6 +1,7 @@
 package indianpoker.domain;
 
 import indianpoker.domain.player.Player;
+import indianpoker.dto.BettingInfoDto;
 import indianpoker.vo.Card;
 import indianpoker.vo.Chips;
 import org.junit.Before;
@@ -15,12 +16,13 @@ import static org.junit.Assert.*;
 public class DealerTest extends Fixture {
     private Dealer testDealer = new Dealer();;
 
-    @Test
-    public void receivePlayerCards() {
+    @Before
+    public void setUp() {
         Map<Player, Card> map =  testDealer.receivePlayerCards(player1, player2);
         for (Card card : map.values()) {
             System.out.println(card);
         }
+        testDealer.drawPlayerCards(map);
     }
 
     @Test
@@ -74,4 +76,11 @@ public class DealerTest extends Fixture {
         assertEquals(p2CurChip.addChips(Chips.ofNumberOfChips(5)), player2.showChips());
     }
 
+    @Test
+    public void generateBettingInfo() {
+        BettingInfoDto bettingInfoDto = testDealer.generateBettingInfo(player1, bettingTable);
+        assertEquals(bettingInfoDto.getOwnBetterDto().getName(), "dom");
+        System.out.println(bettingInfoDto);
+
+    }
 }

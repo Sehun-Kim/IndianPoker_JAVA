@@ -1,9 +1,11 @@
 package indianpoker.domain;
 
+import indianpoker.domain.betting.BettingTable;
 import indianpoker.domain.player.Loser;
 import indianpoker.domain.player.Player;
 import indianpoker.domain.player.Winner;
-import indianpoker.dto.TurnResultDto;
+import indianpoker.dto.*;
+import indianpoker.exception.GameOverException;
 import indianpoker.vo.Card;
 import indianpoker.vo.Chips;
 
@@ -12,6 +14,19 @@ import java.util.Map;
 
 public class Dealer {
     private Map<Player, Card> playerCards;
+
+    public BettingInfoDto generateBettingInfo(Player better, BettingTable bettingTable) {
+        return new BettingInfoDto(bettingTable.toDto(better),
+                getOtherPlayerCard(better),
+                better.toDto());
+    }
+
+    private Card getOtherPlayerCard(Player better) {
+        for (Player player : playerCards.keySet()){
+            if(!player.equals(better)) return playerCards.get(player);
+        }
+        return null;
+    }
 
     public void drawPlayerCards(Player firstPlayer, Player lastPlayer) {
         this.playerCards = receivePlayerCards(firstPlayer, lastPlayer);
@@ -49,11 +64,9 @@ public class Dealer {
         return this.winOrLose(player2.toWinner(), player1.toLoser(), winningChips);
     }
 
-
     public Card getPlayerCard(Player player) {
         return this.playerCards.get(player);
     }
-
     TurnResultDto draw(Winner winner1, Winner winner2, Chips winningChips) {
         winner1.gainChips(winningChips.halfChips());
         winner2.gainChips(winningChips.halfChips());
@@ -71,5 +84,25 @@ public class Dealer {
         return TurnResultDto.of()
                 .addWinner(winner.toPlayer().toDto())
                 .addWinningChips(winningChips);
+    }
+
+    public void checkGameOver(Player player1, Player player2) {
+        if(player1.showChips().isEmpty() || player2.showChips().isEmpty())
+            throw new GameOverException("GAME OVER");
+    }
+
+    public WinnerDto judgeGameWinner(Player player1, Player player2) {
+        WinnerDto winnerDto = new WinnerDto();
+        if(player1.showChips().compareTo(player2.showChips()) > 0) {
+            winnerDto.addWinnerName(player1.toWinner().getName());
+        }
+        if(player1.showChips().compareTo(player2.showChips()) < 0) {
+            winnerDto.addWinnerName(player2.toWinner().getName());
+        }
+        if(player1.showChips().compareTo(player2.showChips()) == 0) {
+            winnerDto.addWinnerName(player1.toWinner().getName());
+            winnerDto.addWinnerName(player2.toWinner().getName());
+        }
+        return winnerDto;
     }
 }

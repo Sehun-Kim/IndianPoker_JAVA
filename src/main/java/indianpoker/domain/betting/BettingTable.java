@@ -1,5 +1,7 @@
 package indianpoker.domain.betting;
 
+import indianpoker.domain.player.Player;
+import indianpoker.dto.BettingTableDto;
 import indianpoker.vo.Chips;
 
 // 턴에서 칩이 쌓이는 곳
@@ -28,11 +30,10 @@ public class BettingTable {
         return this.firstPlayerBettingChips.addChips(this.lastPlayerBettingChips);
     }
 
-    public Chips getFirstPlayerBettingChips() {
-        return firstPlayerBettingChips;
-    }
-
-    public Chips getLastPlayerBettingChips() {
-        return lastPlayerBettingChips;
+    public BettingTableDto toDto(Player better) {
+        if (better.isFirst()) {
+            return new BettingTableDto(firstPlayerBettingChips, lastPlayerBettingChips);
+        }
+        return new BettingTableDto(lastPlayerBettingChips, firstPlayerBettingChips);
     }
 }

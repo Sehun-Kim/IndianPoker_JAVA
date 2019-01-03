@@ -7,6 +7,7 @@ import indianpoker.dto.TurnResultDto;
 import indianpoker.exception.CanNotCallCaseException;
 import indianpoker.exception.EmptyChipException;
 import indianpoker.view.InputView;
+import indianpoker.view.ResultView;
 import indianpoker.vo.BettingCase;
 import indianpoker.vo.Chips;
 import support.util.ChipExtractorUtil;
@@ -18,17 +19,26 @@ public class Turn {
         dealer.drawPlayerCards(player1, player2); // 뷰에 상대 카드가 뭔지 보여줄 것을 리턴
         BettingTable bettingTable = new BettingTable();
         ChipExtractorUtil.addAllBettingChips(player1.initTurn(), player2.initTurn(), bettingTable);
-
+        TurnResultDto turnResultDto = TurnResultDto.of();
         try {
-            orderToRun(player1, player2, bettingTable, dealer);
+            turnResultDto = orderToRun(player1, player2, bettingTable, dealer);
         } catch (EmptyChipException e) {
-            dealer.judgeCallCase(player1, player2, bettingTable.calcWinningChips());
+            turnResultDto = dealer.judgeCallCase(player1, player2, bettingTable.calcWinningChips());
+        } finally {
+            ResultView.showTurnResult(turnResultDto);
+            dealer.checkGameOver(player1, player2);
         }
 
     }
 
-    static TurnResultDto run(Player better, Player otherPlayer, BettingTable bettingTable, Dealer dealer) {
+    static TurnResultDto firstRun(Player better, Player otherPlayer, BettingTable bettingTable, Dealer dealer) {
         checkEmptyChipException(better.showChips(), otherPlayer.showChips());
+        return run(better, otherPlayer, bettingTable, dealer);
+    }
+
+    static TurnResultDto run(Player better, Player otherPlayer, BettingTable bettingTable, Dealer dealer) {
+        ResultView.showBettingInfo(dealer.generateBettingInfo(better, bettingTable));
+
         BettingCase bettingCase = InputView.inputBettingCase();
 
         if (bettingCase.equals(BettingCase.DIE_CASE)) {
@@ -43,6 +53,10 @@ public class Turn {
     }
 
     private static TurnResultDto bettingRaiseCase(Player better, Player otherPlayer, BettingTable bettingTable, Dealer dealer, BettingCase bettingCase) {
+        if (otherPlayer.showChips().isEmpty()) {
+            System.out.println("상대가 올인하여 Raise가 불가합니다.");
+            return run(better, otherPlayer, bettingTable, dealer);
+        }
         Chips chips = InputView.inputChip(bettingTable.calcDiffChips(), better.showChips(), otherPlayer.showChips());
         ChipExtractorUtil.addBettingChips(better.betting(better.payChips(chips), bettingCase), bettingTable);
         return run(otherPlayer, better, bettingTable, dealer);
@@ -66,9 +80,9 @@ public class Turn {
 
     private static TurnResultDto orderToRun(Player player1, Player player2, BettingTable bettingTable, Dealer dealer) {
         if (player1.isFirst())
-            return run(player1, player2, bettingTable, dealer);
+            return firstRun(player1, player2, bettingTable, dealer);
 
-        return run(player2, player1, bettingTable, dealer);
+        return firstRun(player2, player1, bettingTable, dealer);
     }
 
     private static void checkEmptyChipException(Chips player1Chips, Chips player2Chips) {

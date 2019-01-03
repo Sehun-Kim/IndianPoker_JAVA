@@ -3,7 +3,7 @@ package indianpoker.domain.player;
 import indianpoker.domain.Deck;
 import indianpoker.domain.betting.bettingstate.BettingState;
 import indianpoker.domain.betting.bettingstate.InitBettingState;
-import indianpoker.dto.PlayerDto;
+import indianpoker.dto.BetterDto;
 import indianpoker.vo.BettingCase;
 import indianpoker.vo.Card;
 import indianpoker.vo.Chips;
@@ -24,12 +24,9 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
         this.firstBetter = firstBetter;
     }
 
+    @Override
     public String getName() {
         return name;
-    }
-
-    public Deck getDeck() {
-        return deck;
     }
 
     @Override
@@ -79,8 +76,8 @@ public abstract class AbstractPlayer implements Winner, Loser, Player {
     }
 
     @Override
-    public PlayerDto toDto() {
-        return new PlayerDto(this.name, this.chips);
+    public BetterDto toDto() {
+        return new BetterDto(this.name, this.chips);
     }
 
     @Override

@@ -1,5 +1,7 @@
 package indianpoker.vo;
 
+import support.util.CardDesign;
+
 import java.util.Objects;
 
 public class Card implements Comparable<Card>{
@@ -15,6 +17,10 @@ public class Card implements Comparable<Card>{
 
     private int checkCard(int card){
         if(card < MIN || card > MAX) throw new IllegalArgumentException("Illegal argument for create card");
+        return card;
+    }
+
+    public int getCard() {
         return card;
     }
 
@@ -40,8 +46,11 @@ public class Card implements Comparable<Card>{
 
     @Override
     public String toString() {
-        return "Card{" +
-                "card=" + card +
-                '}';
+        return new StringBuilder()
+                .append("[")
+                .append(card)
+                .append("] ")
+                .append(CardDesign.valueOfCard(card))
+                .toString();
     }
 }

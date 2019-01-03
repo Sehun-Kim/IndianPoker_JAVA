@@ -2,11 +2,11 @@ package indianpoker.dto;
 
 import indianpoker.vo.Chips;
 
-public class PlayerDto {
+public class BetterDto {
     private String name;
     private Chips remainChips;
 
-    public PlayerDto(String name, Chips remainChips) {
+    public BetterDto(String name, Chips remainChips) {
         this.name = name;
         this.remainChips = remainChips;
     }
@@ -15,15 +15,13 @@ public class PlayerDto {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public Chips getRemainChips() {
+        return remainChips;
     }
 
     @Override
     public String toString() {
-        return "PlayerDto{" +
-                "name='" + name + '\'' +
-                ", remainChips=" + remainChips +
-                '}';
+        return "Better : " + name + System.lineSeparator() +
+                "Chips : " + remainChips;
     }
 }

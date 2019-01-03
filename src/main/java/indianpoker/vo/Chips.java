@@ -2,8 +2,11 @@ package indianpoker.vo;
 
 import java.util.Objects;
 
-public class Chips implements Comparable<Chips>{
+public class Chips implements Comparable<Chips> {
     private int numberOfChips;
+    private static final String A_CHIP = "💵";
+    private static final String TEN_CHIP = "💰";
+
 
     public static Chips ofZero() {
         return new Chips(0);
@@ -19,7 +22,7 @@ public class Chips implements Comparable<Chips>{
         this.numberOfChips = numberOfChips;
     }
 
-    public Chips subChips (Chips minusChips) {
+    public Chips subChips(Chips minusChips) {
         return Chips.ofNumberOfChips(this.numberOfChips - minusChips.numberOfChips);
     }
 
@@ -58,15 +61,28 @@ public class Chips implements Comparable<Chips>{
 
     @Override
     public String toString() {
-        return "Chips{" +
-                "numberOfChips=" + numberOfChips +
-                '}';
+        StringBuilder sb = new StringBuilder()
+                .append("[")
+                .append(this.numberOfChips)
+                .append("] ");
+
+        int numberOfTenChips = this.numberOfChips / 10;
+        int numberOfAChips = this.numberOfChips % 10;
+
+        for (int i = 0; i < numberOfTenChips; i++) {
+            sb.append(TEN_CHIP);
+        }
+        for (int i = 0; i < numberOfAChips; i++) {
+            sb.append(A_CHIP);
+        }
+
+        return sb.toString();
     }
 
     @Override
     public int compareTo(Chips other) {
-        if(this.numberOfChips > other.numberOfChips) return 1;
-        if(this.numberOfChips < other.numberOfChips) return -1;
+        if (this.numberOfChips > other.numberOfChips) return 1;
+        if (this.numberOfChips < other.numberOfChips) return -1;
         return 0;
     }
 
