@@ -1,6 +1,6 @@
 package indianpoker.domain.player;
 
-import indianpoker.domain.Deck;
+import support.domain.Deck;
 import indianpoker.vo.Chips;
 
 public class HumanPlayer extends AbstractPlayer {

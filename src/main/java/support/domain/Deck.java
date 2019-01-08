@@ -1,4 +1,4 @@
-package indianpoker.domain;
+package support.domain;
 
 import indianpoker.vo.Card;
 

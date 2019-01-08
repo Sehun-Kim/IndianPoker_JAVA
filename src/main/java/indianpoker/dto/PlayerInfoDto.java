@@ -2,11 +2,11 @@ package indianpoker.dto;
 
 import indianpoker.vo.Chips;
 
-public class BetterDto {
+public class PlayerInfoDto {
     private String name;
     private Chips remainChips;
 
-    public BetterDto(String name, Chips remainChips) {
+    public PlayerInfoDto(String name, Chips remainChips) {
         this.name = name;
         this.remainChips = remainChips;
     }

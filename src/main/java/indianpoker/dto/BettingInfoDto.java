@@ -2,16 +2,16 @@ package indianpoker.dto;
 
 import indianpoker.vo.Card;
 
-// betting 했을 때 배팅 정보를 뷰단에 뿌려줌
+// raiseBetting 했을 때 배팅 정보를 뷰단에 뿌려줌
 public class BettingInfoDto {
     private BettingTableDto currentTableDto;
     private Card otherPlayerCard;
-    private BetterDto ownBetterDto;
+    private PlayerInfoDto ownPlayerInfoDto;
 
-    public BettingInfoDto(BettingTableDto currentTableDto, Card otherPlayerCard, BetterDto ownBetterDto) {
+    public BettingInfoDto(BettingTableDto currentTableDto, Card otherPlayerCard, PlayerInfoDto ownPlayerInfoDto) {
         this.currentTableDto = currentTableDto;
         this.otherPlayerCard = otherPlayerCard;
-        this.ownBetterDto = ownBetterDto;
+        this.ownPlayerInfoDto = ownPlayerInfoDto;
     }
 
     public BettingTableDto getCurrentTableDto() {
@@ -22,8 +22,8 @@ public class BettingInfoDto {
         return otherPlayerCard;
     }
 
-    public BetterDto getOwnBetterDto() {
-        return ownBetterDto;
+    public PlayerInfoDto getOwnPlayerInfoDto() {
+        return ownPlayerInfoDto;
     }
 
     @Override
@@ -31,7 +31,7 @@ public class BettingInfoDto {
         return "BettingInfoDto{" +
                 "currentTableDto=" + currentTableDto +
                 ", otherPlayerCard=" + otherPlayerCard +
-                ", ownBetterDto=" + ownBetterDto +
+                ", ownPlayerInfoDto=" + ownPlayerInfoDto +
                 '}';
     }
 }

@@ -10,7 +10,7 @@ import org.junit.Test;
 import support.Fixture;
 import support.util.ChipExtractorUtil;
 
-public class BettingTableTest extends Fixture {
+public class BettingControllerTableTest extends Fixture {
     BettingTable bettingTable;
 
     @Before

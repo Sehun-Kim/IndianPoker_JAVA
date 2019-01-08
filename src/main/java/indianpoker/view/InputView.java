@@ -1,5 +1,6 @@
 package indianpoker.view;
 
+import indianpoker.dto.BettingChipBoundaryDto;
 import indianpoker.vo.BettingCase;
 import indianpoker.vo.Chips;
 
@@ -14,21 +15,23 @@ public class InputView {
         return sc.nextLine();
     }
 
-    public static Chips inputChip(Chips diffChips, Chips myChips, Chips otherChips) {
+    public static Chips inputChip(BettingChipBoundaryDto bettingChipBoundaryDto) {
         System.out.println("betting할 칩 수를 입력하세요.");
         int inputChipsSize = Integer.parseInt(sc.nextLine());
 
-        if (inputChipsSize <= diffChips.getNumberOfChips()) {
-            System.out.printf("최소 %d개의 칩을 베팅하여야 합니다." + System.lineSeparator(), diffChips.getNumberOfChips());
-            return inputChip(diffChips, myChips, otherChips);
+        if (inputChipsSize <= bettingChipBoundaryDto.getDiffChips().getNumberOfChips()) {
+            System.out.printf("최소 %d개의 칩을 베팅하여야 합니다." + System.lineSeparator(), bettingChipBoundaryDto.getDiffChips().getNumberOfChips());
+            return inputChip(bettingChipBoundaryDto);
         }
-        if (inputChipsSize > diffChips.addChips(otherChips).getNumberOfChips()) {
-            System.out.printf("상대의 칩 이상 베팅할 수 없습니다. 최대 배팅 가능 칩 : %d" + System.lineSeparator(), diffChips.addChips(otherChips).getNumberOfChips());
-            return inputChip(diffChips, myChips, otherChips);
+        if (inputChipsSize > bettingChipBoundaryDto.getDiffChips().addChips(bettingChipBoundaryDto.getOtherChips()).getNumberOfChips()) {
+            System.out.printf("상대의 칩 이상 베팅할 수 없습니다. 최대 배팅 가능 칩 : %d"
+                    + System.lineSeparator(),
+                    bettingChipBoundaryDto.getDiffChips().addChips(bettingChipBoundaryDto.getOtherChips()).getNumberOfChips());
+            return inputChip(bettingChipBoundaryDto);
         }
-        if (inputChipsSize > myChips.getNumberOfChips()) {
-            System.out.printf("칩이 부족합니다. : %d" + System.lineSeparator(), myChips.getNumberOfChips());
-            return inputChip(diffChips, myChips, otherChips);
+        if (inputChipsSize > bettingChipBoundaryDto.getBetterChips().getNumberOfChips()) {
+            System.out.printf("칩이 부족합니다. : %d" + System.lineSeparator(), bettingChipBoundaryDto.getBetterChips().getNumberOfChips());
+            return inputChip(bettingChipBoundaryDto);
         }
 
         return Chips.ofNumberOfChips(inputChipsSize);

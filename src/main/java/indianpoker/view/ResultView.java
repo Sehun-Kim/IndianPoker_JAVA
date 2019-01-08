@@ -1,9 +1,9 @@
 package indianpoker.view;
 
-import indianpoker.dto.BetterDto;
+import indianpoker.dto.PlayerInfoDto;
 import indianpoker.dto.BettingInfoDto;
 import indianpoker.dto.TurnResultDto;
-import indianpoker.dto.WinnerDto;
+import indianpoker.dto.GameResultDto;
 
 import java.util.List;
 
@@ -26,7 +26,7 @@ public class ResultView {
                 .append("상대 Card : ")
                 .append(generateBettingInfo.getOtherPlayerCard()).append(LINE_SEPARATOR)
                 .append("--------------------").append(LINE_SEPARATOR)
-                .append(generateBettingInfo.getOwnBetterDto()).append(LINE_SEPARATOR)
+                .append(generateBettingInfo.getOwnPlayerInfoDto()).append(LINE_SEPARATOR)
                 .append("--------------------").append(LINE_SEPARATOR);
         System.out.println(sb.toString());
     }
@@ -37,12 +37,12 @@ public class ResultView {
 
     private static String generateTurnResultMessage(TurnResultDto turnResultDto) {
         StringBuilder sb = new StringBuilder().append(LINE_SEPARATOR);
-        sb.append("====== Turn Result ======").append(LINE_SEPARATOR);
-        List<BetterDto> winners = turnResultDto.getWinners();
+        sb.append("====== TurnController Result ======").append(LINE_SEPARATOR);
+        List<PlayerInfoDto> winners = turnResultDto.getWinners();
         if(turnResultDto.isDraw()){
             sb.append("무승부").append(LINE_SEPARATOR);
-            for (BetterDto betterDto : winners) {
-                sb.append(betterDto.getName() + "이 ");
+            for (PlayerInfoDto playerInfoDto : winners) {
+                sb.append(playerInfoDto.getName() + "이 ");
                 sb.append(turnResultDto.getWinningChips() + "를 획득하였습니다.")
                         .append(LINE_SEPARATOR);
             }
@@ -54,7 +54,7 @@ public class ResultView {
         return sb.toString();
     }
 
-    public static void showGameResult(WinnerDto judgeGameWinner) {
+    public static void showGameResult(GameResultDto judgeGameWinner) {
         System.out.println("====== GAME OVER ======");
         if(judgeGameWinner.isDraw()) {
             System.out.println("무승부 입니다.");

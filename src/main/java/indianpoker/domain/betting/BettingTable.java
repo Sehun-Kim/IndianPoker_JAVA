@@ -1,5 +1,6 @@
 package indianpoker.domain.betting;
 
+import indianpoker.domain.player.FirstJudgeable;
 import indianpoker.domain.player.Player;
 import indianpoker.dto.BettingTableDto;
 import indianpoker.vo.Chips;
@@ -30,7 +31,7 @@ public class BettingTable {
         return this.firstPlayerBettingChips.addChips(this.lastPlayerBettingChips);
     }
 
-    public BettingTableDto toDto(Player better) {
+    public BettingTableDto toDto(FirstJudgeable better) {
         if (better.isFirst()) {
             return new BettingTableDto(firstPlayerBettingChips, lastPlayerBettingChips);
         }

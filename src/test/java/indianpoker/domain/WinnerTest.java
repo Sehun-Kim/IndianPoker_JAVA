@@ -7,6 +7,7 @@ import indianpoker.domain.player.Winner;
 import org.junit.Before;
 import org.junit.Test;
 import indianpoker.vo.Chips;
+import support.domain.Deck;
 
 import static org.junit.Assert.*;
 

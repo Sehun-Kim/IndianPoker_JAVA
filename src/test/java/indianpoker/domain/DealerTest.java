@@ -79,8 +79,7 @@ public class DealerTest extends Fixture {
     @Test
     public void generateBettingInfo() {
         BettingInfoDto bettingInfoDto = testDealer.generateBettingInfo(player1, bettingTable);
-        assertEquals(bettingInfoDto.getOwnBetterDto().getName(), "dom");
+        assertEquals(bettingInfoDto.getOwnPlayerInfoDto().getName(), "dom");
         System.out.println(bettingInfoDto);
-
     }
 }

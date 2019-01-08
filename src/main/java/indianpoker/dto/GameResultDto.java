@@ -3,10 +3,10 @@ package indianpoker.dto;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WinnerDto {
+public class GameResultDto {
     private List<String> winnerNames;
 
-    public WinnerDto() {
+    public GameResultDto() {
         this.winnerNames = new ArrayList<>();
     }
 

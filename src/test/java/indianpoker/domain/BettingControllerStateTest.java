@@ -4,15 +4,17 @@ import indianpoker.domain.betting.bettingstate.CloseBettingState;
 import indianpoker.domain.betting.bettingstate.GeneralBettingState;
 import indianpoker.domain.player.HumanPlayer;
 import indianpoker.domain.player.Player;
+import indianpoker.exception.CanNotCallCaseException;
 import org.junit.Before;
 import org.junit.Test;
 import indianpoker.vo.BettingCase;
 import indianpoker.vo.Chips;
+import support.domain.Deck;
 import support.Fixture;
 
 import static org.junit.Assert.*;
 
-public class BettingStateTest extends Fixture {
+public class BettingControllerStateTest extends Fixture {
     Player player1;
     Player player2;
 
@@ -34,7 +36,7 @@ public class BettingStateTest extends Fixture {
         assertTrue(player2.betting(Chips.ofNumberOfChips(5), BettingCase.RAISE_CASE) instanceof GeneralBettingState);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expected = CanNotCallCaseException.class)
     public void 첫번째라서콜을못하는상황() {
         player1.betting(Chips.ofNumberOfChips(3), BettingCase.CALL_CASE);
     }

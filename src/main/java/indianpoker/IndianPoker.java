@@ -1,8 +1,8 @@
 package indianpoker;
 
-import indianpoker.controller.Turn;
+import indianpoker.controller.TurnController;
 import indianpoker.domain.Dealer;
-import indianpoker.domain.Deck;
+import support.domain.Deck;
 import indianpoker.domain.player.HumanPlayer;
 import indianpoker.domain.player.Player;
 import indianpoker.exception.GameOverException;
@@ -32,7 +32,7 @@ public class IndianPoker {
 
     private static int gameStart(Player player1, Player player2, Dealer dealer, int turnCount) {
         try {
-            Turn.start(player1, player2, dealer);
+            TurnController.build(player1, player2, dealer);
             turnCount++;
         } catch (GameOverException e) {
             turnCount = GAME_OVER_FLAG;

@@ -1,7 +1,6 @@
 package support;
 
 import indianpoker.domain.Dealer;
-import indianpoker.domain.Deck;
 import indianpoker.domain.betting.BettingTable;
 import indianpoker.domain.betting.bettingstate.BettingState;
 import indianpoker.domain.betting.bettingstate.InitBettingState;
@@ -9,6 +8,7 @@ import indianpoker.domain.player.HumanPlayer;
 import indianpoker.domain.player.Player;
 import indianpoker.vo.BettingCase;
 import indianpoker.vo.Chips;
+import support.domain.Deck;
 
 public class Fixture {
     public static Player player1 = new HumanPlayer("dom", new Deck(), Chips.ofNumberOfChips(30), true);

@@ -46,7 +46,7 @@ public class Dealer {
     }
 
     public TurnResultDto judgeDieCase(Player loser, Player winner, Chips winningChips) {
-        return this.winOrLose(winner.toWinner(), loser.toLoser(), winningChips);
+        return this.winOrLose(winner, loser, winningChips);
     }
 
     public TurnResultDto judgeCallCase(Player player1, Player player2, Chips winningChips) {
@@ -54,14 +54,14 @@ public class Dealer {
         System.out.println(player2.toDto().getName() + " : " + getPlayerCard(player2));
 
         if (getPlayerCard(player1).compareTo(getPlayerCard(player2)) == 0) {
-            return this.draw(player1.toWinner(), player2.toWinner(), winningChips);
+            return this.draw(player1, player2, winningChips);
         }
 
         if (getPlayerCard(player1).compareTo(getPlayerCard(player2)) == 1) {
-            return this.winOrLose(player1.toWinner(), player2.toLoser(), winningChips);
+            return this.winOrLose(player1, player2, winningChips);
         }
 
-        return this.winOrLose(player2.toWinner(), player1.toLoser(), winningChips);
+        return this.winOrLose(player2, player1, winningChips);
     }
 
     public Card getPlayerCard(Player player) {
@@ -72,8 +72,8 @@ public class Dealer {
         winner2.gainChips(winningChips.halfChips());
 
         return TurnResultDto.of()
-                .addWinner(winner1.toPlayer().toDto())
-                .addWinner(winner2.toPlayer().toDto())
+                .addWinner(winner1.toDto())
+                .addWinner(winner2.toDto())
                 .addWinningChips(winningChips.halfChips());
     }
 
@@ -82,7 +82,7 @@ public class Dealer {
         winner.changeFirstBetter();
         loser.changeLastBetter();
         return TurnResultDto.of()
-                .addWinner(winner.toPlayer().toDto())
+                .addWinner(winner.toDto())
                 .addWinningChips(winningChips);
     }
 
@@ -91,18 +91,18 @@ public class Dealer {
             throw new GameOverException("GAME OVER");
     }
 
-    public WinnerDto judgeGameWinner(Player player1, Player player2) {
-        WinnerDto winnerDto = new WinnerDto();
+    public GameResultDto judgeGameWinner(Player player1, Player player2) {
+        GameResultDto gameResultDto = new GameResultDto();
         if(player1.showChips().compareTo(player2.showChips()) > 0) {
-            winnerDto.addWinnerName(player1.toWinner().getName());
+            gameResultDto.addWinnerName(player1.toDto().getName());
         }
         if(player1.showChips().compareTo(player2.showChips()) < 0) {
-            winnerDto.addWinnerName(player2.toWinner().getName());
+            gameResultDto.addWinnerName(player2.toDto().getName());
         }
         if(player1.showChips().compareTo(player2.showChips()) == 0) {
-            winnerDto.addWinnerName(player1.toWinner().getName());
-            winnerDto.addWinnerName(player2.toWinner().getName());
+            gameResultDto.addWinnerName(player1.toDto().getName());
+            gameResultDto.addWinnerName(player2.toDto().getName());
         }
-        return winnerDto;
+        return gameResultDto;
     }
 }

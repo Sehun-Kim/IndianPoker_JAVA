@@ -3,6 +3,7 @@ package indianpoker.domain;
 import org.junit.Before;
 import org.junit.Test;
 import indianpoker.vo.Card;
+import support.domain.Deck;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TurnResultDto {
-    private List<BetterDto> winners;
+    private List<PlayerInfoDto> winners;
     private Chips winningChips;
 
     public static TurnResultDto of() {
@@ -17,8 +17,8 @@ public class TurnResultDto {
         this.winners = new ArrayList<>();
     }
 
-    public TurnResultDto addWinner(BetterDto betterDto) {
-        this.winners.add(betterDto);
+    public TurnResultDto addWinner(PlayerInfoDto playerInfoDto) {
+        this.winners.add(playerInfoDto);
         return this;
     }
 
@@ -27,7 +27,7 @@ public class TurnResultDto {
         return this;
     }
 
-    public List<BetterDto> getWinners() {
+    public List<PlayerInfoDto> getWinners() {
         return winners;
     }
 
