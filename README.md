@@ -1,4 +1,4 @@
-# IndianPoker
+# indianpoker.IndianPoker
 
 #### AI(ver1.0)
 1. 카드출현 횟수 기억
