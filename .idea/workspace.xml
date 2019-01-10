@@ -2,56 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff199e5-aa00-40dc-8c8c-070e4faad908" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/indianpoker/controller/BettingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/indianpoker/domain/Turn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/FirstJudgeable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingChipBoundaryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/indianpoker/domain/TurnTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/support/util/ChipExtractorUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/IndianPoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/IndianPoker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/controller/Turn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/controller/TurnTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/controller/TurnTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/BettingStateTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/Dealer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/domain/Dealer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/indianpoker/controller/TurnTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/DealerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/domain/DealerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/Deck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/DeckTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/domain/DeckTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/HumanPlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/domain/HumanPlayerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/WinnerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/domain/WinnerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/betting/BettingTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/domain/betting/BettingTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/betting/BettingTableTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/player/AbstractPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/domain/player/AbstractPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/player/HumanPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/domain/player/HumanPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/domain/player/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/player/Winner.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/domain/player/Winner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/dto/BetterDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/dto/BettingInfoDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/dto/BettingInfoDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/dto/TurnResultDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/dto/TurnResultDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/dto/WinnerDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/indianpoker/view/InputView.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/view/InputView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/indianpoker/domain/Turn.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/domain/Turn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/indianpoker/dto/PlayerInfoDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/dto/PlayerInfoDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/indianpoker/view/ResultView.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/indianpoker/view/ResultView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/support/Fixture.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/support/Fixture.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/IndianPoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/IndianPoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/controller/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/controller/TurnController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/domain/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/domain/Dealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/domain/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/support/domain/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/BettingTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/BettingTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/AbstractPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/AbstractPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/HumanPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Winner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Winner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/dto/BetterDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/dto/PlayerInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/dto/TurnResultDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/dto/TurnResultDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/dto/WinnerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/dto/GameResultDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/domain/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/domain/Turn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/AbstractBettingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/AbstractBettingState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/BettingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/BettingState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/dto/PlayerInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/dto/PlayerInfoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/view/InputView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/view/InputView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/indianpoker/view/ResultView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/indianpoker/view/ResultView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/indianpoker/controller/TurnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/indianpoker/controller/TurnTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/indianpoker/domain/BettingStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/indianpoker/domain/BettingControllerStateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/support/util/ValidateInputChipsUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/indianpoker/controller/TurnTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/indianpoker/domain/DealerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/indianpoker/domain/DealerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/indianpoker/domain/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/indianpoker/domain/DeckTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/indianpoker/domain/HumanPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/indianpoker/domain/HumanPlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/indianpoker/domain/WinnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/indianpoker/domain/WinnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/indianpoker/domain/betting/BettingTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/indianpoker/domain/betting/BettingControllerTableTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/support/Fixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/support/Fixture.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -64,42 +34,81 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/Turn.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/GameResultDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="94" column="112" selection-start-line="94" selection-start-column="112" selection-end-line="94" selection-end-column="112" />
+            <state relative-caret-position="240">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#1468#1469#0" expanded="true" />
-                <element signature="e#1522#1523#0" expanded="true" />
-                <element signature="e#1593#1594#0" expanded="true" />
-                <element signature="e#1642#1643#0" expanded="true" />
-                <element signature="e#2297#2298#0" expanded="true" />
-                <element signature="e#2357#2358#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/controller/TurnController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingTableDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+            <state relative-caret-position="317">
+              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+              <folding>
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingInfoDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingChipBoundaryDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/Turn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="55" column="38" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1788#1789#0" expanded="true" />
+                <element signature="e#1837#1838#0" expanded="true" />
+                <element signature="e#2408#2409#0" expanded="true" />
+                <element signature="e#2468#2469#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/controller/BettingController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/Dealer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+            <state relative-caret-position="60">
+              <caret line="52" column="92" selection-start-line="52" selection-start-column="92" selection-end-line="52" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,22 +117,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/FirstBettingState.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Winner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Loser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/HumanPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/view/InputView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -133,10 +163,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -162,6 +192,8 @@
       <find>run(</find>
       <find>inputChip</find>
       <find>better</find>
+      <find>init</find>
+      <find>TurnController Result</find>
     </findStrings>
     <replaceStrings>
       <replace>player2</replace>
@@ -179,28 +211,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/support/util/BettingCheckerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/support/util/CloseCheckerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/util/CloseChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/HumanPlayer.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/Deck.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/exception/EmptyChipException.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/dto/TurnResultDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/dto/PlayerDto.java" />
         <option value="$PROJECT_DIR$/src/test/java/indianpoker/domain/DeckTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/support/Fixture.java" />
         <option value="$PROJECT_DIR$/src/test/java/indianpoker/domain/betting/BettingTableTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/BettingState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/AbstractBettingState.java" />
         <option value="$PROJECT_DIR$/src/test/java/indianpoker/domain/BettingStateTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/indianpoker/controller/TurnTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/indianpoker/vo/ChipsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/indianpoker/domain/HumanPlayerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/vo/BettingCase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/util/ChipExtractorUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/exception/CanNotCallCaseException.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/FirstBettingState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/support/util/ValidateInputChipsUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingInfoDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingTableDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/support/util/CardDesign.java" />
@@ -208,28 +232,36 @@
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/dto/BetterDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/vo/Chips.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/exception/GameOverException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/indianpoker/IndianPoker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/indianpoker/dto/PlayerInfoDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Winner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/Dealer.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/AbstractPlayer.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/indianpoker/view/ResultView.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Orderable.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/player/FirstJudgeable.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/BettingTable.java" />
-        <option value="$PROJECT_DIR$/src/test/java/indianpoker/domain/DealerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/controller/Betting.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/dto/WinnerDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/indianpoker/dto/GameResultDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/controller/Turn.java" />
         <option value="$PROJECT_DIR$/src/main/java/support/Deck.java" />
         <option value="$PROJECT_DIR$/src/main/java/support/domain/Deck.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/controller/TurnController.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingChipBoundaryDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/indianpoker/view/InputView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/Turn.java" />
         <option value="$PROJECT_DIR$/src/main/java/indianpoker/controller/BettingController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indianpoker/domain/BettingControllerStateTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/Turn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/indianpoker/dto/GameResultDto.java" />
+        <option value="$PROJECT_DIR$/src/test/java/support/Fixture.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indianpoker/domain/DealerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/indianpoker/dto/PlayerInfoDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/support/util/ChipExtractorUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/support/util/ChipExtractorUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/indianpoker/domain/TurnTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/indianpoker/view/ResultView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/BettingState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/AbstractBettingState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/indianpoker/view/InputView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/indianpoker/IndianPoker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/support/util/ValidateInputChipsUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/indianpoker/domain/Dealer.java" />
       </list>
     </option>
   </component>
@@ -248,7 +280,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -329,6 +360,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="indianpoker" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IndianPoker_JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IndianPoker_JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="indianpoker" type="462c0819:PsiDirectoryNode" />
               <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -338,7 +379,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="indianpoker" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IndianPoker_JAVA" type="b2602c69:ProjectViewProjectNode" />
@@ -347,7 +388,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="indianpoker" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IndianPoker_JAVA" type="b2602c69:ProjectViewProjectNode" />
@@ -377,15 +418,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="indianpoker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IndianPoker_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IndianPoker_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="indianpoker" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IndianPoker_JAVA" type="b2602c69:ProjectViewProjectNode" />
@@ -425,53 +457,25 @@
             </path>
             <path>
               <item name="IndianPoker_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="IndianPoker_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="IndianPoker_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IndianPoker_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="IndianPoker_JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IndianPoker_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IndianPoker_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546937589240" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547102454257" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -482,8 +486,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="indianpoker.domain" />
       <recent name="support.util" />
+      <recent name="indianpoker.domain" />
       <recent name="indianpoker.controller" />
       <recent name="indianpoker.vo" />
       <recent name="controller" />
@@ -509,7 +513,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in IndianPoker_JAVA">
+  <component name="RunManager" selected="Application.IndianPoker">
     <configuration name="IndianPoker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="indianpoker.IndianPoker" />
       <module name="IndianPoker_JAVA" />
@@ -531,66 +535,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BettingControllerStateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChipExtractorUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndianPoker_JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="support.domain.*" />
+          <option name="PATTERN" value="support.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="indianpoker.domain" />
-      <option name="MAIN_CLASS_NAME" value="indianpoker.domain.BettingControllerStateTest" />
+      <option name="PACKAGE_NAME" value="support.util" />
+      <option name="MAIN_CLASS_NAME" value="support.util.ChipExtractorUtilTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BettingControllerStateTest.isCloseBettingState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChipExtractorUtilTest.addBettingChips" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndianPoker_JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="support.domain.*" />
+          <option name="PATTERN" value="support.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="indianpoker.domain" />
-      <option name="MAIN_CLASS_NAME" value="indianpoker.domain.BettingControllerStateTest" />
-      <option name="METHOD_NAME" value="isCloseBettingState" />
+      <option name="PACKAGE_NAME" value="support.util" />
+      <option name="MAIN_CLASS_NAME" value="support.util.ChipExtractorUtilTest" />
+      <option name="METHOD_NAME" value="addBettingChips" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DealerTest.generateBettingInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TurnTest.generateBettingBoundary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IndianPoker_JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="support.domain.*" />
+          <option name="PATTERN" value="indianpoker.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="indianpoker.domain" />
-      <option name="MAIN_CLASS_NAME" value="indianpoker.domain.DealerTest" />
-      <option name="METHOD_NAME" value="generateBettingInfo" />
+      <option name="MAIN_CLASS_NAME" value="indianpoker.domain.TurnTest" />
+      <option name="METHOD_NAME" value="generateBettingBoundary" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.IndianPoker" />
+      <item itemvalue="JUnit.TurnTest.generateBettingBoundary" />
       <item itemvalue="JUnit.All in IndianPoker_JAVA" />
-      <item itemvalue="JUnit.BettingControllerStateTest.isCloseBettingState" />
-      <item itemvalue="JUnit.BettingControllerStateTest" />
-      <item itemvalue="JUnit.DealerTest.generateBettingInfo" />
+      <item itemvalue="JUnit.ChipExtractorUtilTest.addBettingChips" />
+      <item itemvalue="JUnit.ChipExtractorUtilTest" />
+      <item itemvalue="Application.IndianPoker" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in IndianPoker_JAVA" />
         <item itemvalue="Application.IndianPoker" />
-        <item itemvalue="JUnit.DealerTest.generateBettingInfo" />
-        <item itemvalue="JUnit.BettingControllerStateTest" />
-        <item itemvalue="JUnit.BettingControllerStateTest.isCloseBettingState" />
+        <item itemvalue="JUnit.All in IndianPoker_JAVA" />
+        <item itemvalue="JUnit.ChipExtractorUtilTest" />
+        <item itemvalue="JUnit.ChipExtractorUtilTest.addBettingChips" />
+        <item itemvalue="JUnit.TurnTest.generateBettingBoundary" />
       </list>
     </recent_temporary>
   </component>
@@ -608,35 +612,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BettingStateTest_첫번째라서콜을못하는상황 - 2019.01.02 at 11h 10m 53s.xml">
-      <configuration name="BettingStateTest.첫번째라서콜을못하는상황" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BettingStateTest_isCloseBettingState - 2019.01.02 at 11h 12m 57s.xml">
-      <configuration name="BettingStateTest.isCloseBettingState" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BettingStateTest_isCloseBettingState - 2019.01.02 at 11h 13m 49s.xml">
-      <configuration name="BettingStateTest.isCloseBettingState" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BettingStateTest_isCloseBettingState - 2019.01.02 at 11h 16m 17s.xml">
-      <configuration name="BettingStateTest.isCloseBettingState" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BettingStateTest - 2019.01.02 at 11h 25m 47s.xml">
-      <configuration name="BettingStateTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_IndianPoker_JAVA - 2019.01.02 at 12h 23m 11s.xml">
+    <history-entry file="All_in_IndianPoker_JAVA - 2019.01.10 at 14h 47m 05s.xml">
       <configuration name="All in IndianPoker_JAVA" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_IndianPoker_JAVA - 2019.01.02 at 12h 23m 26s.xml">
+    <history-entry file="All_in_IndianPoker_JAVA - 2019.01.10 at 14h 47m 41s.xml">
       <configuration name="All in IndianPoker_JAVA" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DealerTest_generateBettingInfo - 2019.01.03 at 15h 55m 53s.xml">
-      <configuration name="DealerTest.generateBettingInfo" configurationId="JUnit" />
+    <history-entry file="All_in_IndianPoker_JAVA - 2019.01.10 at 14h 49m 00s.xml">
+      <configuration name="All in IndianPoker_JAVA" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DealerTest_generateBettingInfo - 2019.01.03 at 15h 56m 43s.xml">
-      <configuration name="DealerTest.generateBettingInfo" configurationId="JUnit" />
+    <history-entry file="All_in_IndianPoker_JAVA - 2019.01.10 at 14h 49m 39s.xml">
+      <configuration name="All in IndianPoker_JAVA" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DealerTest_generateBettingInfo - 2019.01.03 at 16h 00m 53s.xml">
-      <configuration name="DealerTest.generateBettingInfo" configurationId="JUnit" />
+    <history-entry file="All_in_IndianPoker_JAVA - 2019.01.10 at 14h 50m 33s.xml">
+      <configuration name="All in IndianPoker_JAVA" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_IndianPoker_JAVA - 2019.01.10 at 14h 51m 50s.xml">
+      <configuration name="All in IndianPoker_JAVA" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_IndianPoker_JAVA - 2019.01.10 at 14h 52m 23s.xml">
+      <configuration name="All in IndianPoker_JAVA" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ChipExtractorUtilTest_addBettingChips - 2019.01.10 at 15h 19m 00s.xml">
+      <configuration name="ChipExtractorUtilTest.addBettingChips" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ChipExtractorUtilTest - 2019.01.10 at 15h 19m 52s.xml">
+      <configuration name="ChipExtractorUtilTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_IndianPoker_JAVA - 2019.01.10 at 15h 20m 20s.xml">
+      <configuration name="All in IndianPoker_JAVA" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -650,11 +654,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project Explorer" order="0" />
       <window_info id="Job Explorer" order="1" />
       <window_info id="DB Browser" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.28271407" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.28675282" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
@@ -665,12 +670,12 @@
       <window_info anchor="bottom" id="DB Execution Console" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.06575342" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.28767124" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26438355" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32876712" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32876712" />
@@ -686,18 +691,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/util/CloseCheckerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/exception/EmptyChipException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-          <folding>
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/indianpoker/domain/WinnerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -740,28 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indianpoker/controller/TurnTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="30" selection-start-line="30" selection-start-column="2" selection-end-line="35" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indianpoker/domain/BettingControllerStateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/indianpoker/vo/ChipsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -796,40 +767,6 @@
             <element signature="e#192#193#0" expanded="true" />
             <element signature="e#222#223#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/support/util/ChipExtractorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/support/util/ValidateInputChipsUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/support/Fixture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/support/util/CardDesign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -874,16 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/IndianPoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -905,12 +832,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/GeneralBettingState.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/BettingTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="480">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/support/domain/Deck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indianpoker/domain/BettingControllerStateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indianpoker/controller/TurnTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indianpoker/domain/DealerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1053">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding>
+            <element signature="e#3407#3408#0" expanded="true" />
+            <element signature="e#3465#3466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/support/Fixture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/AbstractPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/support/util/ChipExtractorUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="18" column="97" selection-start-line="18" selection-start-column="97" selection-end-line="18" selection-end-column="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/indianpoker/domain/TurnTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/controller/TurnController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/CloseBettingState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/FirstBettingState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/controller/BettingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/AbstractBettingState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#1129#1130#0" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -927,10 +987,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/CloseBettingState.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/GeneralBettingState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -940,7 +1000,68 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/BettingState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/FirstJudgeable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/view/ResultView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/view/InputView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/support/util/CardDesign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/support/util/ValidateInputChipsUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/support/util/ChipExtractorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/IndianPoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -949,74 +1070,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/PlayerInfoDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/AbstractPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Loser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/view/ResultView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/TurnResultDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="30" />
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/BettingTable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/GameResultDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="240">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/AbstractBettingState.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingTableDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        <state relative-caret-position="317">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingInfoDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingChipBoundaryDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/Turn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="55" column="38" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#1129#1130#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
-            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1788#1789#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="e#2408#2409#0" expanded="true" />
+            <element signature="e#2468#2469#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1031,20 +1156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/FirstJudgeable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/HumanPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1055,126 +1166,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/indianpoker/domain/DealerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/Loser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/GameResultDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/player/HumanPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingTableDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingInfoDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/support/domain/Deck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/Dealer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="90" column="29" lean-forward="true" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/view/InputView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/dto/BettingChipBoundaryDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding>
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/betting/bettingstate/FirstBettingState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/domain/Turn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="94" column="112" selection-start-line="94" selection-start-column="112" selection-end-line="94" selection-end-column="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1522#1523#0" expanded="true" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#2297#2298#0" expanded="true" />
-            <element signature="e#2357#2358#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/controller/TurnController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/indianpoker/controller/BettingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        <state relative-caret-position="60">
+          <caret line="52" column="92" selection-start-line="52" selection-start-column="92" selection-end-line="52" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

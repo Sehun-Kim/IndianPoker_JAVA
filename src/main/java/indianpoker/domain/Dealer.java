@@ -13,6 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Dealer {
+    private static final int COMPARE_STANDARD = 0;
     private Map<Player, Card> playerCards;
 
     public BettingInfoDto generateBettingInfo(Player better, BettingTable bettingTable) {
@@ -22,8 +23,8 @@ public class Dealer {
     }
 
     private Card getOtherPlayerCard(Player better) {
-        for (Player player : playerCards.keySet()){
-            if(!player.equals(better)) return playerCards.get(player);
+        for (Player player : playerCards.keySet()) {
+            if (!player.equals(better)) return playerCards.get(player);
         }
         return null;
     }
@@ -50,14 +51,11 @@ public class Dealer {
     }
 
     public TurnResultDto judgeCallCase(Player player1, Player player2, Chips winningChips) {
-        System.out.println(player1.toDto().getName() + " : " + getPlayerCard(player1));
-        System.out.println(player2.toDto().getName() + " : " + getPlayerCard(player2));
-
-        if (getPlayerCard(player1).compareTo(getPlayerCard(player2)) == 0) {
+        if (getPlayerCard(player1).compareTo(getPlayerCard(player2)) == COMPARE_STANDARD) {
             return this.draw(player1, player2, winningChips);
         }
 
-        if (getPlayerCard(player1).compareTo(getPlayerCard(player2)) == 1) {
+        if (getPlayerCard(player1).compareTo(getPlayerCard(player2)) > COMPARE_STANDARD) {
             return this.winOrLose(player1, player2, winningChips);
         }
 
@@ -67,6 +65,7 @@ public class Dealer {
     public Card getPlayerCard(Player player) {
         return this.playerCards.get(player);
     }
+
     TurnResultDto draw(Winner winner1, Winner winner2, Chips winningChips) {
         winner1.gainChips(winningChips.halfChips());
         winner2.gainChips(winningChips.halfChips());
@@ -87,19 +86,19 @@ public class Dealer {
     }
 
     public void checkGameOver(Player player1, Player player2) {
-        if(player1.showChips().isEmpty() || player2.showChips().isEmpty())
+        if (player1.showChips().isEmpty() || player2.showChips().isEmpty())
             throw new GameOverException("GAME OVER");
     }
 
     public GameResultDto judgeGameWinner(Player player1, Player player2) {
         GameResultDto gameResultDto = new GameResultDto();
-        if(player1.showChips().compareTo(player2.showChips()) > 0) {
+        if (player1.showChips().compareTo(player2.showChips()) > COMPARE_STANDARD)
             gameResultDto.addWinnerName(player1.toDto().getName());
-        }
-        if(player1.showChips().compareTo(player2.showChips()) < 0) {
+
+        if (player1.showChips().compareTo(player2.showChips()) < COMPARE_STANDARD)
             gameResultDto.addWinnerName(player2.toDto().getName());
-        }
-        if(player1.showChips().compareTo(player2.showChips()) == 0) {
+
+        if (player1.showChips().compareTo(player2.showChips()) == COMPARE_STANDARD) {
             gameResultDto.addWinnerName(player1.toDto().getName());
             gameResultDto.addWinnerName(player2.toDto().getName());
         }

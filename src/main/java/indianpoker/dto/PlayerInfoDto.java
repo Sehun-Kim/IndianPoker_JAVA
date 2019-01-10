@@ -21,7 +21,7 @@ public class PlayerInfoDto {
 
     @Override
     public String toString() {
-        return "Better : " + name + System.lineSeparator() +
+        return "Player : " + name + System.lineSeparator() +
                 "Chips : " + remainChips;
     }
 }

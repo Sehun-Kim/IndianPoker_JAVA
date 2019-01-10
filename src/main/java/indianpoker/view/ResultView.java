@@ -37,7 +37,7 @@ public class ResultView {
 
     private static String generateTurnResultMessage(TurnResultDto turnResultDto) {
         StringBuilder sb = new StringBuilder().append(LINE_SEPARATOR);
-        sb.append("====== TurnController Result ======").append(LINE_SEPARATOR);
+        sb.append("====== Turn Result ======").append(LINE_SEPARATOR);
         List<PlayerInfoDto> winners = turnResultDto.getWinners();
         if(turnResultDto.isDraw()){
             sb.append("무승부").append(LINE_SEPARATOR);

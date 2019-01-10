@@ -102,4 +102,14 @@ public class Turn {
     public TurnResultDto judgeDieCase() {
         return dealer.judgeDieCase(firstPlayer, lastPlayer, bettingTable.calcWinningChips());
     }
+
+    @Override
+    public String toString() {
+        return "Turn{" +
+                "firstPlayer=" + firstPlayer +
+                ", lastPlayer=" + lastPlayer +
+                ", dealer=" + dealer +
+                ", bettingTable=" + bettingTable +
+                '}';
+    }
 }

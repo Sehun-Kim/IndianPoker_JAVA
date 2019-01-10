@@ -10,5 +10,4 @@ public interface BettingState {
     BettingState betting(Chips chips, BettingCase bettingCase);
     Chips getChips();
     boolean isFirst();
-    boolean isCloseBettingState();
 }

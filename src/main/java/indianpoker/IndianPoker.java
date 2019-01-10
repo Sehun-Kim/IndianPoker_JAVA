@@ -10,7 +10,6 @@ import indianpoker.view.ResultView;
 import indianpoker.vo.Chips;
 
 public class IndianPoker {
-
     public static final int GAME_OVER_FLAG = 100;
     public static final int TURN_MAX_COUNT = 20;
     public static final int TURN_INIT_COUNT = 1;
